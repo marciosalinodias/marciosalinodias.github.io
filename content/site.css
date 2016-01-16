@@ -1,0 +1,82 @@
+/* FTure Cores: azul - 004C67 bege - EEE */
+body {
+  margin:0;
+  padding: 0;
+  padding-top: 5%;
+  background: #F0F0F0 url('images/BG_line.png'); 
+  /*  #8ECADE #74A5B5 */
+}
+
+img.img100 {
+	max-width: 100%;
+}
+
+img.img80{
+	max-width: 80%;
+}
+
+/*
+#fundoWings {
+	position: absolute;
+    width: 100%;
+    z-index: -90;
+    opacity: 0.1
+}
+*/
+
+.content {
+	width: 100%;
+}
+
+.cnt-50 {
+	width: 50%;
+}
+
+.cnt-45 {
+	width: 45%;
+}
+
+.left { 
+	float: left; 
+	text-align: right;
+}
+
+.right { 
+	float: right;
+	text-align: left; 
+	padding-top: 20px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.circular {
+	width: 110px;
+	height: 110px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://graph.facebook.com/100000402000460/picture?type=large) no-repeat;
+	background-position: -45px -50px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	    margin-left: 46%;
+	}
+
+.circular img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#logo img{
+	position: fixed;
+	top: 30%;
+	left: 20%;
+}
+
+.hide {
+	display: none;
+}
+
