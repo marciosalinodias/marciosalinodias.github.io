@@ -1125,7 +1125,13 @@
         }
     </script>
     <script src="js/impress.js"></script>
+    <script src="js/jquery.js"></script>
     <script>
         impress().init();
+        $(document).ready(function(){
+          setTimeout(function(){
+            $(".hint").fadeOut( "slow" );
+          }, 2000)
+        });
     </script>
 </body>
