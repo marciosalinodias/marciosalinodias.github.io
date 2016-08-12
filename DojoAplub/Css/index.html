@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <base target="_blank"></base>
+
+    <title>CSS</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/html.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported bg-radial-blue">
+
+    <div class="fallback-message">
+        <p>Para melhor visualizar abra nas ultimas versões do <b>Chrome</b>, <b>Safari</b> ou <b>Firefox</b>.</p>
+    </div>
+
+
+
+    <div id="impress">
+
+        <div class="ing step" data-x="-2000" data-y="-3500" data-rotation="45">
+            <p class="tx-center">
+              <img class="margin-x-md margin-y-none" src="images/dojo_aplub.png" />
+            </p>
+        </div>
+
+        <div class="ing step" data-x="-1000" data-y="-1500" data-scale="4">
+            <img class="margin-left-sm blackwhiteInverse" src="images/html.png" style="margin:0;padding:0; width: 32%!important;" />
+            <img src="images/css.png" style="margin:0;padding:0; width: 32%!important;" />
+            <img class="blackwhiteInverse" src="images/js.png" style="margin:0;padding:0; width: 32%!important;" />
+            <p class="tx-right fnt-scale-down-50">
+              Marcio Dias
+              &nbsp;<img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/github_mark.png" />&nbsp;
+              <a href="https://github.com/marciosalinodias">github.com/marciosalinodias</a>
+            </p>
+        </div>
+
+        <div class="ing step slide" data-x="-5000" data-y="-1500">
+            <q class="tx-center margin-top-lg">
+              <h3>O que é CSS?</h3>
+              <div class="margin-top-lg">
+                <img src="images/memes/john.png" style="margin:0;padding:0; width: 24%!important;" />
+                <ul class="tx-left fnt-scale-down-50 margin-left-lg pull-right">
+                    <li><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+                    <li>Nasceu em 1996</li>
+                    <li>Interpretado por browsers</li>
+                    <li>Define o estilo do HTML</li>
+                    <li>Arquivo .CSS</li>
+                    <li>Versão atual CSS3</li>
+                    <li>/* Coment&aacute;rio */</li>
+                </ul>
+              </div>
+              <span class="clearfix fnt-scale-down-50 margin-xs">Linha do tempo</span>
+              <hr class="margin-xs">
+              <div style="bottom:0">
+                <p class="fnt-scale-down-30">
+                    <b class="rotating- margin-x-lg"><span class="tx-blue">1996 - CSS</span> + JS</b>
+                    <b class="rotating- margin-x-lg tx-blue">1998 - CSS 2</b>
+                    <b class="rotating- margin-x-lg">2002 - Tableless</b>
+                    <b class="rotating- margin-x-lg">2005 - AJAX</b>
+                    <b class="rotating- margin-x-lg">2009 - HTML5</b>
+                    <b class="rotating- margin-x-lg tx-blue">2012 - CSS3</b>
+                </p>
+              </div>
+            </q>
+        </div>
+
+        <div class="step" data-x="-5000" data-y="500" data-scale="4">
+            <p class="try tx-right margin-right-lg"><b>HTML tentou, mas não foi...</b>
+            <div class="fnt-scale-down-50">
+              <p class="width60 pull-left">O CSS foi criado para resolver um grande problema</p>
+              <p class="width60 pull-right tx-right">HTML foi criado para exibir conte&uacute;do, dados. Não para decorar!</p>
+              <p class="width60 pull-left">No HTML 3.2 foram incluídas tags de estilização, um exemplo é a tag <a href="http://www.w3schools.com/tags/tag_font.asp">&lt;font&gt;</a>.</p>
+              <p class="width60 pull-right tx-right">Cada vez ficava mais complicado o desenvolvimento de páginas web.</p>
+              <p class="width60 pull-left"><a href="https://www.w3.org/">W3C</a> entrou no jogo e deu um basta: Criou o CSS.</p>
+              <p class="width60 pull-right tx-right">Permitiu: <b>Desacoplamento</b>, <b>reutilização de código</b> e <b>organização</b>, ou seja, "economizou" muito trabalho.</p>
+            </div>
+        </div>
+
+        <div class="its step" data-x="-4000" data-y="4500" data-rotate="45" data-scale="5">
+            <p  class="try tx-center margin-right-lg"><b><em>&#123;&nbsp;Defini&ccedil;&atilde;o&nbsp;&#125;</em></b></p>
+            <p class="fnt-scale-down-70">Meu estilo &eacute; definido assim...</p>
+            <script src="https://gist.github.com/marciosalinodias/e7bd797f972e1020011bc45d8e231af9.js"></script>
+            <p class="fnt-scale-down-30">
+                <a class="pull-right tx-overline" href="http://www.w3schools.com/css/css_howto.asp">&#123;&nbsp;How To...&nbsp;&#125;</a>
+            </p>
+        </div>
+
+        <div class="ing step step1200" data-x="-8250" data-y="3000" data-rotate="90" data-scale="5">
+          <p  class="try tx-center margin-right-lg margin-bottom-lg">
+            <b><em>&iexcl;&iexcl;&iexcl;Prioridade&#33;&#33;&#33;</em></b>
+          </p>
+          <div class="fnt-scale-down-60" style="width: 50%;">
+            1. Inline
+            <script src="https://gist.github.com/marciosalinodias/23e230f2ba06cc8d60f27f2acf49d579.js"></script>
+          </div>
+          <div class="fnt-scale-down-60 tx-center" style="width: 50%; margin: 10px auto;">
+            2. External &amp; Internal
+            <script src="https://gist.github.com/marciosalinodias/dd960f8951d403bf731deb3028a01219.js"></script>
+          </div>
+          <div  class="fnt-scale-down-60 tx-right">
+            3. Browsers<br>
+            <img src="images/navegadores.png" style="margin: 0; padding: 0; width: 20%!important;" />
+          </div>
+          <p class="fnt-scale-down-50 tx-center">Oooouuuuu</p>
+          <br>
+          <p class="tx-center"><span class="border_cube padding-lg fnt-scale-down-80">!important</span></p>
+        </div>
+
+        <div class="ing step" data-x="-14500" data-y="-850" data-rotate="180" data-scale="5">
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">
+              <b><em>!important</em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-50 margin-bottom-lgg">Sobrescreve a definição de CSS <em>forçadamente</em>, ou seja, <strong>use apenas</strong>:</p>
+          <img src="images/memes/quem_manda.jpg" class="pull-left radius" style="margin: 0 20px 0 0; padding: 0; width: 40%!important;" />
+          <div class="tx-left fnt-scale-down-50">
+            <p class="margin-y-lgg">Caso a hierarquia de cascata não se aplique.</p>
+            <p class="margin-y-lgg">Caso a tenha que sobrescrever uma definição de um plugin (Bootstrap).</p>
+            <p class="margin-y-lgg"><b class="rotating-">Nunca</b>&nbsp; se estiver fazendo um plugin.</p>
+            <p class="margin-y-lgg"><b class="rotating-">Nunca</b>&nbsp; para o site inteiro.</p>
+          </div>
+        </div>
+
+        <div class="its step border_cube" data-x="-14500" data-y="2000" data-rotate="180" data-scale="5">
+            <p  class="try tx-center margin-right-lg"><b><em>&#123;&nbsp;Sintaxe&nbsp;&#125;</em></b></p>
+            <p class="tx-center margin-top-lg">
+              <img src="images/css_definition.png" style="margin: 0; padding: 30px;" />
+            </p>
+            <p class="fnt-scale-down-30 tx-center tx-overline">
+                <a href="http://www.w3schools.com/css/css_syntax.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+            </p>
+            <img src="images/memes/computer.png" style="position: absolute; margin: 0; padding: 0; width: 20%!important; right: 20px; bottom: 0;" />
+        </div>
+
+        <div class="ing step step1200 " data-x="-14500" data-y="6200" data-rotate="180" data-scale="6">
+          <p class="tx-center margin-bottom-lgg">&#123;&nbsp;Seletores - B&aacute;sicos &nbsp;&#125;</p>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element">Tag ( element )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/f80d21ac3a68bd19ece75b69e89731e4.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_id">id ( <span class="fnt-scale-down-120">&#35;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/2bf8d6220bccf52bb29185de00f67fac.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_class">class ( <span class="fnt-scale-down-120">&#46;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/4ab95f0d301670e9d11f6f91e89d515b.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class2">Combine seletores</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/361e1f055688650dfcc1edac90f1ad94.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_grouping">Agrupe seletores ( <span class="fnt-scale-down-120">&#44;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/78144a0343f0515ef0b4a3b46557dfd8.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax2">Coment&aacute;rio ( <span class="fnt-scale-down-120">&#47;&#42;&nbsp;&#42;&#47;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/cc2123582825f86c4844e1c8ab39fd8d.js"></script>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ing step step1200 padding-xs" data-x="-14500" data-y="12000" data-rotate="90" data-scale="4">
+          <p class="tx-center margin-bottom-lgg">&#123;&nbsp;Seletores - Combinators&nbsp;&#125;</p>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="https://www.w3.org/TR/css3-selectors/#universal-selector">Todos ( <span class="fnt-scale-down-120">&#42;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/82b2ac8059e28e00365e5197a576650c.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element">Descendente ( espa&ccedil;o )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/16282ce5babd2796d3ce9d285169ca9f.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_gt">Child ( <span class="fnt-scale-down-120">&gt;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/4f382e775abcb311ad497abde0568f59.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube" style="clear: left;">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_pluss">Pr&oacute;ximo Adjacente ( <span class="fnt-scale-down-120">&#43;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/f3b38e1abeea2f5d81434da6cfc9cb5e.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_tilde">Pr&oacute;ximo Global ( <span class="fnt-scale-down-120">&#126;</span> )</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/53826b1a9657b10bfb52f18a634eefb4.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">&iquest; Pai ( <span class="fnt-scale-down-120">&lt;</span> ) &#63;</b>
+            </div>
+            <div class="cube_body">
+              <img class="margin-x-lgg" src="images/memes/no.png" style="padding: 0; width: 32%!important;" />
+            </div>
+          </div>
+
+          <p class="fnt-scale-down-30 tx-right tx-overline" style="clear: left;">
+              <a href="https://www.w3.org/TR/css3-selectors/#selectors">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </p>
+        </div>
+
+        <div class="ing step step1200 padding-xs" data-x="-20000" data-y="12000" data-scale="3">
+          <p class="tx-center margin-bottom-lgg">&#123;&nbsp;Seletores - Pseudo-Classes <sub class="fnt-scale-down-30">(pt.1)</sub>&nbsp;&#125;</p>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/cssref/sel_firstchild.asp">:first-child</a>
+                &nbsp;&amp;&nbsp;
+                <a href="http://www.w3schools.com/cssref/sel_last-child.asp">:last-child</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/b0fa428c09941629c5066aaabbcfff65.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/cssref/sel_nth-child.asp">:nth-child(n)</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/7c9e0880affda5ac334555bac0ad27d4.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube margin-bottom-lgg">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/cssref/sel_not.asp">:not(selector)</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/5c32e7ef3aa41770f1d2e66e450f3e77.js"></script>
+            </div>
+          </div>
+
+          <p class="fnt-scale-down-30 tx-right tx-overline">
+              <a href="http://www.w3schools.com/css/css_pseudo_classes.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </p>
+        </div>
+
+        <div class="ing step step1200 padding-xs" data-x="-21000" data-y="7000" data-scale="4">
+          <p class="tx-center margin-bottom-lgg">&#123;&nbsp;Seletores - Pseudo-Classes <sub class="fnt-scale-down-30">(pt.2)</sub>&nbsp;&#125;</p>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/cssref/sel_hover.asp">:hover</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/eb3c376794356c0af20afbfef887ec64.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/cssref/sel_enabled.asp">:enabled</a>
+                &nbsp;&amp;&nbsp;
+                <a href="http://www.w3schools.com/cssref/sel_disabled.asp">:disabled</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/24cfc62872ed5d442408f7ac7cbad579.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube margin-bottom-lgg">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/cssref/sel_checked.asp">:checked</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/3212a01e698f7f620596003014eb9638.js"></script>
+            </div>
+          </div>
+
+          <p class="fnt-scale-down-30 tx-right tx-overline" style="clear:left;">
+              <a href="http://www.w3schools.com/css/css_pseudo_classes.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </p>
+        </div>
+
+        <div class="ing step step1200 padding-xs" data-x="-21000" data-y="4000" data-scale="4">
+          <p class="tx-center margin-bottom-lgg">&#123;&nbsp;Seletores - Pseudo-Elements&nbsp;&#125;</p>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_firstline">::first-line</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/85d8a101177078a8ac46e04aeee904aa.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_firstletter">::first-letter</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/eb4fa6a0ba31b75578220d61c68a734e.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube margin-bottom-lgg">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss3_selection">::selection</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/f041c85792d08923b030e68b8bd86c31.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_before">::before</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/94950fe4b7e177d79c174b9cd9824e7c.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <b class="tagType">
+                <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_after">::after</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/518d830e3e193071f1f7ee828440aefa.js"></script>
+            </div>
+          </div>
+
+          <p class="fnt-scale-down-30 tx-right tx-overline" style="clear:left;">
+              <a href="http://www.w3schools.com/css/css_pseudo_elements.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </p>
+        </div>
+
+        <div class="ing step step1200 padding-xs" data-x="-21000" data-y="-1000" data-scale="5">
+          <p class="tx-center margin-bottom-lgg">&#123;&nbsp;Seletores - Attributes&nbsp;&#125;</p>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_value">
+                <b>[attr="value"]</b>
+              </a>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/d45d1b226a388f35d48ea813b75c1d00.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_value2">
+                <b>[attr~="value"]</b>
+              </a>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/cde1e93168aec751fdeb788652a2afb8.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube margin-bottom-lgg">
+            <div class="cube_title">
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_hyphen">
+                <b>[attr|="value"]</b>
+              </a>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/09752b5d5629852a543a21505717b371.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube" style="clear:left;">
+            <div class="cube_title">
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_start">
+                <b>[attrˆ="value"]</b>
+              </a>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/f1ffa8b3010e4e2e4474c43be541d819.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_end">
+                <b>[attr$="value"]</b>
+              </a>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/b8a09e7358efb73b72e343147e7fbd4d.js"></script>
+            </div>
+          </div>
+
+          <div class="cube cube-30 bg-radial-blue border_cube">
+            <div class="cube_title">
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute_contain">
+                <b>[attr*="value"]</b>
+              </a>
+            </div>
+            <div class="cube_body">
+              <script src="https://gist.github.com/marciosalinodias/c2748e4620abbee116cdb4b205754aab.js"></script>
+            </div>
+          </div>
+
+          <p class="fnt-scale-down-30 tx-right tx-overline" style="clear:left;">
+              <a href="http://www.w3schools.com/css/css_attribute_selectors.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </p>
+        </div>
+
+        <div class="ing step" data-x="-21000" data-y="-5500" data-z="-100" data-rotate-x="-40" data-rotate-y="10"  data-scale="5">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">
+              <b><em>Colors</em></b>
+            </a>
+          </p>
+          <p class="tx-left fnt-scale-down-60 margin-y-lg">Os browsers exibem as cores no padrão RGB (Red, Green, Blue)</p>
+          <img class="pull-right" src="images/colorpicker.png" style="width: 40%!important;" />
+          <p class="tx-left fnt-scale-down-50 margin-top-lg padding-top-lg">Você pode definir as cores por:</p>
+          <p class="tx-left fnt-scale-down-50 margin-top-lg border_cube padding-lg">
+            Nome:<br>
+            <span class="radius" style="background-color:red;">&nbsp;red&nbsp;</span>,
+            <span class="radius" style="background-color:green;">&nbsp;green&nbsp;</span>,
+            <span class="radius" style="background-color:blue;">&nbsp;blue&nbsp;</span>
+          </p>
+          <div class="tx-left fnt-scale-down-50 margin-top-sm border_cube padding-lg">
+            <p>
+              C&oacute;digo Hexa (#RGB - #RRGGBB):<br>
+              <span class="radius" style="background-color:#FF0000;">&nbsp;#FF0000&nbsp;</span>,
+              <span class="radius" style="background-color:#00FF00;">&nbsp;#00FF00&nbsp;</span>,
+              <span class="radius" style="background-color:#0000FF;">&nbsp;#0000FF&nbsp;</span>
+            </p>
+            <p class="tx-left fnt-scale-down-70 margin-top-md">
+              Os valores hexadecimais são:
+              <br>
+              <span class="tx-left fnt-scale-down-130">preto - 0123456789ABCDEF - branco</span>
+            </p>
+          </div>
+          <div class="tx-left fnt-scale-down-50 margin-top-lg border_cube padding-lg pull-left" style="width: 70%;">
+            <p>
+              RGB:
+              <span class="radius" style="background-color:rgb(255, 0, 0);">&nbsp;rgb(255, 0, 0)&nbsp;</span>,&nbsp;
+              <span class="radius" style="background-color:rgb(0, 255, 0);">&nbsp;rgb(0, 255, 0)&nbsp;</span>,&nbsp;
+              <span class="radius" style="background-color:rgb(0, 0, 255);">&nbsp;rgb(0, 0, 255)&nbsp;</span>&nbsp;
+            </p>
+            <p class="tx-left fnt-scale-down-70 margin-top-md">
+              Os valores rgb são:&nbsp;&nbsp;&nbsp;<span class="tx-left fnt-scale-down-130">preto - 0/255 - branco</span>
+            </p>
+          </div>
+          <div class="fnt-scale-down-50 pull-right margin-top-sm" style="width: 15%;">
+              <a href="http://www.w3schools.com/colors/default.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </div>
+          <img src="images/memes/rainbow.png" style="position: absolute; margin: 0; padding: 0; width: 8%!important; right: 20px; bottom: 35px;" />
+        </div>
+
+        <div class="ing step step1000" data-x="-27500" data-y="-4500" data-scale="4">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">
+              <b><em>&#123;&nbsp;Box Model&nbsp;&#125;</em></b>
+            </a>
+          </p>
+          <p class="tx-left fnt-scale-down-60 margin-y-lg">Para poder colocar estilo você precisa entender os objetos:</p>
+          <img class="pull-left" src="images/box_model.png" style="width: 45%!important;" />
+          <img src="images/memes/metalgear.png" style="width: 14%!important; margin:0; padding:0; position:absolute; right:30px; top:270px;" />
+          <p class="tx-left fnt-scale-down-50 margin-top-xg padding-top-lg">Cada valor adiciona no tamanho do elemento:</p>
+          <p class="tx-left fnt-scale-down-40 margin-top-md">Margin - 10px</p>
+          <p class="tx-left fnt-scale-down-40 margin-top-xs">Border - 5px</p>
+          <p class="tx-left fnt-scale-down-40 margin-top-xs">Padding - 5px</p>
+          <p class="tx-left fnt-scale-down-40 margin-top-xs">Width - 100px&nbsp;&nbsp;X&nbsp;&nbsp;Height - 50px</p>
+          <p class="tx-left fnt-scale-down-50 margin-top-md">O tamanho real em tela &eacute;: <span class="fnt-scale-down-110">120 X 70px</span></p>
+          <p class="tx-left fnt-scale-down-50 margin-top-lg" style="clear: left;">
+            <b class="rotating-">Nota:</b> também existe mais um elemento que s&oacute; aparece quando &eacute; utilizado:&nbsp;
+            <a href="http://www.w3schools.com/css/css_outline.asp" target="_blank">
+              <b><em>&#123;&nbsp;Outline&nbsp;&#125;</em></b>
+            </a>
+            &nbsp; ( a "borda da borda" )
+          </p>
+        </div>
+
+        <div class="ing step step1000 border_cube padding-bottom-sm" data-x="-27500" data-y="-500" data-scale="3">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/css/css_display_visibility.asp" target="_blank">
+              <b><em>&#123;&nbsp;Display&nbsp;&#125;</em></b>
+            </a>
+          </p>
+          <p class="tx-center fnt-scale-down-60 margin-y-lg">Como os objetos se organizam na tela?</p>
+          <p class="clearfix margin-x-lgg">
+            <img src="images/minecraft.png" style="position: absolute; margin: 0; padding: 0; width: 5%!important; right: 60px; top: 190px;" />
+            <script src="https://gist.github.com/marciosalinodias/903c70ee873e895accf6b1b22760ec89.js"></script>
+          </p>
+          <div class="pull-left tx-center fnt-scale-down-50 width-50">
+            <p><b>block</b></p>
+            <p>Todo e qualquer elemento inicia em uma nova linha, alinhado a esquerda.</p>
+          </div>
+          <div class="pull-right tx-center fnt-scale-down-50 width-50">
+            <p><b>inline</b></p>
+            <p>O elemento segue o fluxo de exibição de tela.</p>
+          </div>
+          <br>
+          <br>
+          <p class="fnt-scale-down-40 tx-right margin-top-sm" style="clear: left;">
+              <a href="http://www.w3schools.com/cssref/pr_class_display.asp">&#123;&nbsp;Mais...&nbsp;&#125;</a>
+          </p>
+          <img class="rotate180" src="images/memes/computer2.png" style="position: absolute; margin: 0; padding: 0; width: 15%!important; left: 20px; top: 0;" />
+        </div>
+
+        <div class="ing step step1000 border_cube padding-bottom-sm" data-x="-27500" data-y="1500" data-scale="3">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/css/css_float.asp" target="_blank">
+              <b><em>&#123;&nbsp;Float&nbsp;&amp;&nbsp;Clear&nbsp;&#125;</em></b>
+            </a>
+          </p>
+          <p class="tx-center fnt-scale-down-60 margin-y-lg">Para onde o elemento vai flutuar?</p>
+          <div class="pull-left tx-center fnt-scale-down-50 width-50">
+            <p>
+              <a href="http://www.w3schools.com/cssref/pr_class_float.asp" target="_blank">
+                <b><em>&#123;&nbsp;float&nbsp;&#125;</em></b>
+              </a>
+            </p>
+            <script src="https://gist.github.com/marciosalinodias/e5e12dd594f7c46ac11fdfd1ae483ef2.js"></script>
+          </div>
+          <div class="pull-right tx-center fnt-scale-down-50 width-50">
+            <p>
+              <a href="http://www.w3schools.com/cssref/pr_class_clear.asp" target="_blank">
+                <b><em>&#123;&nbsp;clear&nbsp;&#125;</em></b>
+              </a>
+            </p>
+            <script src="https://gist.github.com/marciosalinodias/aeec87ae0429a0769fe89c03f2835828.js"></script>
+          </div>
+          <img class="rotate45" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; left: -60px; bottom: -60px; z-index:-1; " />
+          <img class="rotate225" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; right: -60px; top: -60px; z-index:-1;" />
+        </div>
+
+        <div class="ing step step1000 padding-bottom-sm" data-x="-27000" data-y="4500" data-rotate="90" data-scale="3">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/css/css_positioning.asp" target="_blank">
+              <b><em>&#123;&nbsp;Position&nbsp;&#125;</em></b>
+            </a>
+          </p>
+          <p class="tx-center fnt-scale-down-60 margin-y-lg">Como os elementos se posicionam?</p>
+          <div class="pull-left tx-center fnt-scale-down-50 width-50 margin-top-sm">
+            <p>
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_static" target="_blank">
+                <b><em>&#123;&nbsp;static&nbsp;&#125;</em></b>
+              </a>
+            </p>
+            <p class="fnt-scale-down-70">Segue o fluxo de exibição, <em><b>ignorando</b></em> as propriedades <em><b>top/left/right/bottom</b></em>.</p>
+            <script src="https://gist.github.com/marciosalinodias/40d08b84175b63280181018ce2eb8791.js"></script>
+          </div>
+          <div class="pull-right tx-center fnt-scale-down-50 width-50 margin-top-sm">
+            <p>
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative" target="_blank">
+                <b><em>&#123;&nbsp;relative&nbsp;&#125;</em></b>
+              </a>
+            </p>
+            <p class="fnt-scale-down-70"><em><b>Respeita</b></em> as propriedades <em><b>top/left/right/bottom</b></em> referente ao elemento pai.</p>
+            <script src="https://gist.github.com/marciosalinodias/4179a36939d6d25a8ca87afbc6116386.js"></script>
+          </div>
+          <div class="pull-left tx-center fnt-scale-down-50 width-50 margin-top-lgg">
+            <p>
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed" target="_blank">
+                <b><em>&#123;&nbsp;fixed&nbsp;&#125;</em></b>
+              </a>
+            </p>
+            <p class="fnt-scale-down-70"><em><b>Respeita</b></em> propriedades <em><b>top/left/right/bottom</b></em> referente a <em><b>página</b></em>.</p>
+            <script src="https://gist.github.com/marciosalinodias/445c529776de5834db886252b256b828.js"></script>
+          </div>
+          <div class="pull-right tx-center fnt-scale-down-50 width-50 margin-top-lgg">
+            <p>
+              <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute" target="_blank">
+                <b><em>&#123;&nbsp;absolute&nbsp;&#125;</em></b>
+              </a>
+            </p>
+            <p class="fnt-scale-down-70"><em><b>Respeita</b></em> propriedades <em><b>top/left/right/bottom</b></em> referente ao elemento posicionado mais próximo.</p>
+            <script src="https://gist.github.com/marciosalinodias/31721e34327f1d3afac36de7e086249d.js"></script>
+          </div>
+          <p class="tx-center fnt-scale-down-40 padding-top-lgg" style="clear: both;">
+            <b class="rotating-">Nota:</b> também existe o posicionamento por camadas feito através da propriedade
+            <a href="http://www.w3schools.com/cssref/pr_pos_z-index.asp" target="_blank">
+              <b><em>&#123;&nbsp;Z-Index&nbsp;&#125;</em></b>
+            </a>
+          </p>
+        </div>
+
+        <div class="ing step step1000 padding-bottom-sm " data-x="-27000" data-y="7500" data-rotate="135" data-scale="3">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/css/css_overflow.asp" target="_blank">
+              <b><em>&#123;&nbsp;Overflow&nbsp;&#125;</em></b>
+            </a>
+          </p>
+          <p class="tx-center fnt-scale-down-60 margin-y-lg">Define o comportamento caso os elementos internos ultrapassem os limites do elemento pai.</p>
+          <div class="pull-left tx-center fnt-scale-down-50 width-50 margin-top-lgg border_cube" style="position:relative; overflow: hidden; min-height: 100px;">
+            <p style="line-height: 100px;"><b>hidden</b></p>
+            <img class="rotate45" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; left: -25px; bottom: -25px; z-index:-1; " />
+            <img class="rotate135" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; left: -25px; top: -25px; z-index:-1; " />
+            <img class="rotate225" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; right: -25px; top: -25px; z-index:-1;" />
+            <img class="rotate315" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; right: -25px; bottom: -25px; z-index:-1;" />
+          </div>
+          <div class="pull-right tx-center fnt-scale-down-50 width-50 margin-top-lgg border_cube" style="position:relative; overflow: visible; min-height: 100px;">
+            <p style="line-height: 100px;"><b>visible</b></p>
+            <img class="rotate45" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; left: -25px; bottom: -25px; z-index:-1; " />
+            <img class="rotate135" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; left: -25px; top: -25px; z-index:-1; " />
+            <img class="rotate225" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; right: -25px; top: -25px; z-index:-1;" />
+            <img class="rotate315" src="images/ghost.gif" style="position: absolute; margin: 0; padding: 0; width: 15%!important; right: -25px; bottom: -25px; z-index:-1;" />
+          </div>
+        </div>
+
+        <div class="ing step step1000 padding-bottom-sm " data-x="-31000" data-y="7500" data-rotate="180" data-scale="4">
+          <p class="tx-center">
+            <a href="http://www.w3schools.com/css/css_opacity.asp" target="_blank">
+              <b><em>&#123;&nbsp;Opacity&nbsp;&#125;</em></b>
+            </a>
+          </p>
+          <p class="tx-left fnt-scale-down-60 margin-y-lg">Vamos falar com <span style="opacity:0.5;">transparência</span>.</p>
+          <p class="tx-right fnt-scale-down-40 margin-y-md">Os valores de opacity vão de <span style="opacity:0.1;">0.1</span> até <span style="opacity:1.0;">1.0</span>.</p>
+          <div class="pull-left tx-center fnt-scale-down-50 width-50 margin-top-lgg border_cube">
+            <img src="images/ghost.gif" style="margin: 0; padding: 0; width: 20%!important; opacity:0.1;" />
+            <p>0.1</p>
+          </div>
+          <div class="pull-right tx-center fnt-scale-down-50 width-50 margin-top-lgg border_cube">
+            <img src="images/ghost.gif" style="margin: 0; padding: 0; width: 20%!important; opacity:1.0;" />
+            <p>1.0</p>
+          </div>
+        </div>
+
+        <div class="ing step" data-x="-31000" data-y="-4500" data-z="-100" data-rotate-x="-120" data-rotate-y="-230" data-scale="2">
+          <p class="tx-center">
+            <img src="images/css.png" style=" margin: 0; padding: 20px; width: 32%!important; background-color: #fff; border-radius: 30px;" />
+            <br>
+            Continua...
+          </p>
+        </div>
+
+
+        <div class="ing step " data-x="-31000" data-y="14000" data-rotate="180"  data-scale="15">
+          <div class="tx-center fadein tx-center border_cube" >
+            <p>
+              Sugestões?! Dúvidas?!
+            </p>
+            <img class="pull-left" src="https://s.gravatar.com/avatar/1a47308b1d909d7f9971cb6861363f09?s=200" style="background-color: #fff; border-radius: 50%;" />
+            <p class="tx-left fnt-scale-down-50 margin-top-lg padding-top-lg">
+              Marcio Dias
+              <br>
+              <img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/github_mark.png" />&nbsp;
+              <a href="https://github.com/marciosalinodias">github.com/marciosalinodias</a>
+              <br>
+              <img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/glyphicons-envelope.png" />&nbsp;
+              <a href="mailto:marciosalinodias@gmail.com?Subject=DojoHTML5" target="_top">marciosalinodias@gmail.com</a>
+              <br>
+              <img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/glyphicons-envelope.png" />&nbsp;
+              <a href="mailto:marcio.dias@aplub.com.br?Subject=DojoHTML5" target="_top">marcio.dias@aplub.com.br</a>
+              <br>
+              <br>
+            </p>
+            <p class="margin-bottom-lg">
+              Muito obrigado!
+            </p>
+          </div>
+        </div>
+
+    </div>
+
+    <div id="info_github">
+      <p>
+        Powered by&nbsp;
+        <a class="button" href="https://github.com/impress/impress.js/" title="Impress.js">
+          <img src="images/github_mark.png" />&nbsp;Impress.js
+        </a>
+        &nbsp;
+      </p>
+    </div>
+    <!-- IMPRESS -->
+    <div class="hint">
+        <p>Use a barra de espaço ou as setas para navegar.</p>
+    </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Toque na tela para navegar</p>";
+        }
+    </script>
+    <script src="js/impress.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        impress().init();
+        $(document).ready(function(){
+          setTimeout(function(){
+            $(".hint").fadeOut( "slow" );
+          }, 2000)
+        });
+    </script>
+</body>
