@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>HTML</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/html.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported bg-radial-orange">
+
+    <div class="fallback-message">
+        <p>Para melhor visualizar abra nas ultimas versões do <b>Chrome</b>, <b>Safari</b> ou <b>Firefox</b>.</p>
+    </div>
+
+
+
+    <div id="impress">
+
+        <div class="ing step" data-x="-2000" data-y="-3500" data-rotation="45">
+            <p class="tx-center">
+              <img class="margin-x-md margin-y-none" src="images/dojo_aplub.png" />
+            </p>
+        </div>
+
+        <div class="ing step" data-x="-1000" data-y="-1500" data-scale="4">
+            <img class="margin-left-sm" src="images/html.png" style="margin:0;padding:0; width: 32%!important;" />
+            <img class="blackwhiteInverse" src="images/css.png" style="margin:0;padding:0; width: 32%!important;" />
+            <img class="blackwhiteInverse" src="images/js.png" style="margin:0;padding:0; width: 32%!important;" />
+            <p class="tx-right fnt-scale-down-50">
+              Marcio Dias
+              &nbsp;<img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/github_mark.png" />&nbsp;
+              <a href="https://github.com/marciosalinodias" target="_blank">github.com/marciosalinodias</a>
+            </p>
+        </div>
+
+        <div class="ing step slide" data-x="5000" data-y="-1500">
+            <q class="tx-center margin-top-lg">
+              <h3>O que é HTML?</h3>
+              <br>
+              <div>
+                <img src="images/memes/15_years_old.png" style="margin:0;padding:0; width: 32%!important;" />
+                <ul class="tx-left fnt-scale-down-50 margin-left-lg pull-right">
+                    <li>Nasceu em 1991</li>
+                    <li>Interpretado por browsers</li>
+                    <li>XHtml (eXtensible)</li>
+                    <li>Versão atual HTML5</li>
+                    <li>&lt;!-- Coment&aacute;rio --&gt;</li>
+                </ul>
+              </div>
+              <span class="clearfix fnt-scale-down-50 margin-xs">Linha do tempo</span>
+              <hr class="margin-xs">
+              <div style="bottom:0">
+                <p class="fnt-scale-down-30">
+                    <b class="rotating- margin-x-lg">1996 - CSS + JS</b>
+                    <b class="rotating- margin-x-lg">1998 - CSS 2</b>
+                    <b class="rotating- margin-x-lg">2000 - XHTML</b>
+                    <b class="rotating- margin-x-lg">2002 - Tableless</b>
+                    <b class="rotating- margin-x-lg">2005 - AJAX</b>
+                    <b class="rotating- margin-x-lg">2009 - HTML5</b>
+                </p>
+              </div>
+            </q>
+        </div>
+
+        <div class="step" data-x="5000" data-y="500" data-scale="4">
+            <p class="try tx-right margin-right-lg"><b>AS 4 tags</b>
+            <p class="fnt-scale-down-70">Uma estrutura inicial depende apenas de 4 tags:</p>
+            <script src="https://gist.github.com/marciosalinodias/1b60e7803e3034fdba9c51b79941cfb6.js"></script>
+        </div>
+
+        <div class="its step step1200" data-x="8250" data-y="3000" data-rotate="90" data-scale="5">
+            <p  class="try tx-center margin-right-lg"><b><em>&lt;!DOCTYPE&gt;</em></b></p>
+            <p class="fnt-scale-down-70">Navegador, esse documento é um... com as tags...</p>
+            <script src="https://gist.github.com/marciosalinodias/8457bcdb31339b7442d62b5a2aa106ab.js"></script>
+            <p class="fnt-scale-down-30">
+                <a class="pull-left tx-overline" href="http://www.w3schools.com/tags/ref_html_dtd.asp" target="_blank">( Tags / &lt;!DOCTYPE&gt; )</a>
+                <a class="pull-right tx-overline" href="https://www.w3.org/QA/2002/04/valid-dtd-list.html" target="_blank">( Outros &lt;!DOCTYPE&gt; )</a>
+            </p>
+        </div>
+
+        <div class="ing step step1200" data-x="13500" data-y="-850" data-rotate="180" data-scale="5">
+          <p  class="try tx-left margin-right-lg">
+            <a href="http://www.w3schools.com/tags/tag_head.asp" target="_blank">
+              <b><em>&lt;HEAD&gt;</em></b>
+            </a>
+          </p>
+          <img src="images/memes/head.png" style="margin: 0; padding: 0; position: absolute; transform: rotate(30deg); left: 169px; width: 100px !important; top: 0;" />
+          <p class="fnt-scale-down-50">O que dizer dessa página que conheço a tão pouco tempo, mas já considero pacas?!</p>
+          <table class="table_free">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_base.asp" target="_blank">
+                    <b class="rotating-">&lt;base&gt;</b>
+                  </a>
+                </td>
+                <td>Endereço base para os links da página.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank">
+                    <b class="rotating-">&lt;link&gt;</b>
+                  </a>
+                </td>
+                <td>Relaciona a página com um recurso externo [stylesheet, icon].</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_script.asp" target="_blank">
+                    <b class="rotating-">&lt;script&gt;</b>
+                  </a>
+                </td>
+                <td>Define um script na página do cliente [text/javascript, <a href="http://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">outros</a>].</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_style.asp" target="_blank">
+                    <b class="rotating-">&lt;style&gt;</b>
+                  </a>
+                </td>
+                <td>Define informações de estilo para o documento [css].</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank">
+                    <b class="rotating-">&lt;meta&gt;</b>
+                  </a>
+                </td>
+                <td>Metadata e tudo que não "encaixa" nas outras tags e mais<br>[charset, description, author, keywords].</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ing step" data-x="13500" data-y="2000" data-rotate="180" data-scale="5">
+          <img src="images/memes/tellme.jpg" class="pull-left" />
+            <a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank">
+              <b><em>&lt;META&gt;</em></b>
+            </a>
+            <p class="tx-center fnt-scale-down-50">
+              Expõe as informações do site para os browsers e ferramentas de pesquisa
+              <br>
+              <b class="scaling-up-low pull-left">charset</b>
+              <br>
+              <b class="scaling-up-low">keywords</b>
+              <br>
+              <b class="scaling-up-low pull-right">description</b>
+            </p>
+          </p>
+        </div>
+
+
+        <div class="ing step" data-x="13500" data-y="5200" data-rotate="180" data-scale="6">
+          <p class="tx-center">
+            <a href="http://www.quirksmode.org/css/condcom.html" target="_blank">
+              <b><em>&lt;!-- Conditional Comments --&gt;</em></b>
+            </a>
+          </p>
+          <img class="pull-right" src="images/memes/ie_troll.png" style="width: 32%!important; background-color: #fff; border-radius: 50%;" />
+          <p class="tx-left fnt-scale-down-60 margin-top-lg padding-top-lg">
+            <b>&lt;!--[if</b> lt <b>IE</b> 9<b>]&gt;</b>
+            <br>
+                .... Seu "workaround" ....
+            <br>
+            <b>&lt;![</b>endif<b>]--&gt;</b>
+            <br>
+            <br>
+            <a class="tx-overline fnt-scale-down-60" href="http://www.quirksmode.org/css/condcom.html" target="_blank">( Saiba mais )</a>
+          </p>
+        </div>
+
+        <div class="tiny ing step" data-x="13600" data-y="5000" data-rotate="10" data-scale="1">
+          <p class="fadein tx-center">
+            <img src="images/memes/headbodytattoo.jpg" style="width: 50%!important; border-radius: 50%; margin:0; padding:0;" />
+            <br>
+            <b><em>E vamos ao corpo...</em></b>
+          </p>
+        </div>
+
+        <div class="its-in-3d step" data-x="20000" data-y="-800" data-z="-100" data-rotate-x="-40" data-rotate-y="10"  data-scale="5">
+          <p  class="try tx-left margin-right-lg">
+            <a href="http://www.w3schools.com/tags/tag_body.asp" target="_blank">
+              <b><em>&lt;BODY&gt;</em></b>
+            </a>
+          </p>
+          <p class="tx-center">
+            <span class="have">
+              <b class="fnt-scale-down-50">Aqui está seu site!</b>
+            </span>
+          </p>
+          <p class="fnt-scale-down-60">
+            Enquanto o browser usa o <span class="its"><a href="http://www.w3schools.com/tags/tag_head.asp" target="_blank">&lt;HEAD&gt;</a></span> para obter informações de seu site,
+            o <span class="its"><a href="http://www.w3schools.com/tags/tag_body.asp" target="_blank">&lt;BODY&gt;</a></span> é usado para exibição, sendo aqui que seu site é montado.
+          </p>
+        </div>
+
+        <div class="ing step step1200" data-x="20000" data-y="1000" data-scale="2" id="beatles">
+          <p class="fnt-scale-down-80">&#9835; All you need is... &#9835;</span></p>
+          <p class="tx-right">
+            <b class="positioning-60">...10 tags?!</b>
+          </p>
+
+          <div class="fnt-scale-down-50">
+            <p class="width60 pull-left">
+              <a href="http://www.w3schools.com/tags/tag_hn.asp" target="_blank">
+                <b class="rotating-">&lt;h1&gt; - &lt;h6&gt;</b>
+              </a>
+              &nbsp; Títulos de texto.
+            </p>
+
+            <p class="width60 pull-right tx-right">
+              <a href="http://www.w3schools.com/tags/tag_p.asp" target="_blank">
+                <b class="rotating-">&lt;p&gt;</b>
+              </a>
+              &nbsp; Definição de parágrafo.
+            </p>
+
+            <p class="width60 pull-left">
+              <a href="http://www.w3schools.com/tags/tag_em.asp" target="_blank">
+                <b class="rotating-">&lt;em&gt;</b>
+              </a>
+              <span class="fnt-scale-down-70">
+                (<a href="http://www.w3schools.com/tags/tag_i.asp" target="_blank" style="text-decoration: line-through;">&lt;i&gt;</a>)
+              </span>
+              &nbsp; Formata texto para <em>Itálico</em>.
+            </p>
+
+            <p class="width60 pull-right tx-right">
+              <a href="http://www.w3schools.com/tags/tag_strong.asp" target="_blank">
+                <b class="rotating-">&lt;strong&gt;</b>
+              </a>
+              <span class="fnt-scale-down-70">
+                (<a href="http://www.w3schools.com/tags/tag_b.asp" target="_blank" style="text-decoration: line-through;">&lt;b&gt;</a>)
+              </span>
+              &nbsp; Formata texto para <strong>Negrito</strong>.
+            </p>
+
+            <p class="width60 pull-left">
+              <a href="http://www.w3schools.com/tags/tag_a.asp" target="_blank">
+                <b class="rotating-">&lt;a&gt;</b>
+              </a>
+              &nbsp; &Acirc;ncora: Links de redirecionamento.
+            </p>
+
+            <p class="width60 pull-right tx-right">
+              <a href="http://www.w3schools.com/tags/tag_ul.asp" target="_blank">
+                <b class="rotating-">&lt;ul&gt; &amp; &lt;li&gt;</b>
+              </a>
+              <span class="fnt-scale-down-70">
+                (<a href="http://www.w3schools.com/tags/tag_ol.asp" target="_blank">&lt;ol&gt;</a>)
+              </span>
+              &nbsp; Listas não ordenadas.
+            </p>
+
+            <p class="width60 pull-left">
+              <a href="http://www.w3schools.com/tags/tag_span.asp" target="_blank">
+                <b class="rotating-">&lt;span&gt;</b>
+              </a>
+              &nbsp; Adicionar formatação a uma parte do texto.
+            </p>
+
+            <p class="width60 pull-right tx-right">
+              <br>
+              <a href="http://www.w3schools.com/tags/tag_hr.asp" target="_blank">
+                <b class="rotating-">&lt;hr&gt;</b>
+              </a>
+              &nbsp; Linha horizontal para separar seções.
+            </p>
+
+            <p class="width60 pull-left">
+              <a href="http://www.w3schools.com/tags/tag_img.asp" target="_blank">
+                <b class="rotating-">&lt;img&gt;</b>
+              </a>
+              &nbsp; Define um objeto de imagem.
+            </p>
+
+            <p class="width60 pull-right tx-right">
+              <a href="http://www.w3schools.com/tags/tag_div.asp" target="_blank">
+                <b class="rotating-">&lt;div&gt;</b>
+              </a>
+              &nbsp; Divisor. Utilizado para agrupar tags (seções).
+              <br>
+              <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="ing step step1200 " data-x="20000" data-y="4000" data-rotate="50" data-scale="3">
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Metadatos_do_documento" class="tagType" target="_blank">Metadatos do documento</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_head.asp" class="tagObj" target="_blank" ><code>&lt;head&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_title.asp" class="tagObj" target="_blank" ><code>&lt;title&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_base.asp" class="tagObj" target="_blank" ><code>&lt;base&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_link.asp" class="tagObj" target="_blank" ><code>&lt;link&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_meta.asp" class="tagObj" target="_blank" ><code>&lt;meta&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_style.asp" class="tagObj" target="_blank" ><code>&lt;style&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Scripting" class="tagType" target="_blank">Scripting</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_script.asp" class="tagObj" target="_blank" ><code>&lt;script&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_noscript.asp" class="tagObj" target="_blank" ><code>&lt;noscript&gt;</code></a>
+              <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/template" class="tagObj" target="_blank" ><code>&lt;template&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Seções" class="tagType" target="_blank">Seções</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_body.asp" class="tagObj" target="_blank" ><code>&lt;body&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_section.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;section&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_nav.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;nav&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_article.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;article&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_aside.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;aside&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_Heading_Elements.asp" class="tagObj" target="_blank" ><code>&lt;h1&gt; - &lt;h6&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_hgroup.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;hgroup&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_header.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;header&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_footer.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;footer&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_address.asp" class="tagObj" target="_blank" ><code>&lt;address&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_main.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;main&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Agrupando_conteúdo" class="tagType" target="_blank">Agrupando conteúdo</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_p.asp" class="tagObj" target="_blank" ><code>&lt;p&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_hr.asp" class="tagObj" target="_blank" ><code>&lt;hr&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_pre.asp" class="tagObj" target="_blank" ><code>&lt;pre&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_blockquote.asp" class="tagObj" target="_blank" ><code>&lt;blockquote&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_ol.asp" class="tagObj" target="_blank" ><code>&lt;ol&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_ul.asp" class="tagObj" target="_blank" ><code>&lt;ul&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_li.asp" class="tagObj" target="_blank" ><code>&lt;li&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_dl.asp" class="tagObj" target="_blank" ><code>&lt;dl&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_dt.asp" class="tagObj" target="_blank" ><code>&lt;dt&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_dd.asp" class="tagObj" target="_blank" ><code>&lt;dd&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_figure.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;figure&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_figcaption.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;figcaption&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_div.asp" class="tagObj" target="_blank" ><code>&lt;div&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Semântica_textual" class="tagType" target="_blank">Semântica textual</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_a.asp" class="tagObj" target="_blank" ><code>&lt;a&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_em.asp" class="tagObj" target="_blank" ><code>&lt;em&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_strong.asp" class="tagObj" target="_blank" ><code>&lt;strong&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_small.asp" class="tagObj" target="_blank" ><code>&lt;small&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_s.asp" class="tagObj" target="_blank" ><code>&lt;s&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_cite.asp" class="tagObj" target="_blank" ><code>&lt;cite&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_q.asp" class="tagObj" target="_blank" ><code>&lt;q&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_dfn.asp" class="tagObj" target="_blank" ><code>&lt;dfn&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_abbr.asp" class="tagObj" target="_blank" ><code>&lt;abbr&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_data.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;data&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_time.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;time&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_code.asp" class="tagObj" target="_blank" ><code>&lt;code&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_var.asp" class="tagObj" target="_blank" ><code>&lt;var&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_samp.asp" class="tagObj" target="_blank" ><code>&lt;samp&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_kbd.asp" class="tagObj" target="_blank" ><code>&lt;kbd&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_sub.asp" class="tagObj" target="_blank" ><code>&lt;sub&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_i.asp" class="tagObj" target="_blank" ><code>&lt;i&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_b.asp" class="tagObj" target="_blank" ><code>&lt;b&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_u.asp" class="tagObj" target="_blank" ><code>&lt;u&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_mark.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;mark&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_ruby.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;ruby&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_rt.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;rt&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_rp.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;rp&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_bdi.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;bdi&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_bdo.asp" class="tagObj" target="_blank" ><code>&lt;bdo&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_span.asp" class="tagObj" target="_blank" ><code>&lt;span&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_br.asp" class="tagObj" target="_blank" ><code>&lt;br&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_wbr.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;wbr&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube tx-center" style="width: 516px; padding-top: 50px; box-sizing: border-box; font-size: 90% !important;" >
+            <div style="display: inline-block">
+              <b>Tipos de &lt;tag&gt;</b>
+              <br>
+              <a href="http://www.w3schools.com/tags/default.asp" class="tx-overline fnt-scale-down-50 pull-left" target="_blank" >W3C</a>
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list" class="tx-overline fnt-scale-down-50 pull-right" target="_blank" >Mozilla</a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Edições" class="tagType" target="_blank">Edições</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_ins.asp" class="tagObj" target="_blank" ><code>&lt;ins&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_del.asp" class="tagObj" target="_blank" ><code>&lt;del&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Conteúdo_embutido" class="tagType" target="_blank">Conteúdo embutido</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_img.asp" class="tagObj" target="_blank" ><code>&lt;img&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_iframe.asp" class="tagObj" target="_blank" ><code>&lt;iframe&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_embed.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;embed&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_object.asp" class="tagObj" target="_blank" ><code>&lt;object&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_param.asp" class="tagObj" target="_blank" ><code>&lt;param&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_video.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;video&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_audio.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;audio&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_source.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;source&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_track.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;track&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_canvas.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;canvas&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_map.asp" class="tagObj" target="_blank" ><code>&lt;map&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_area.asp" class="tagObj" target="_blank" ><code>&lt;area&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_svg.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;svg&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_math.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;math&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Tabulação_de_dados" class="tagType" target="_blank">Tabulação de dados</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_table.asp" class="tagObj" target="_blank" ><code>&lt;table&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_caption.asp" class="tagObj" target="_blank" ><code>&lt;caption&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_colgroup.asp" class="tagObj" target="_blank" ><code>&lt;colgroup&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_col.asp" class="tagObj" target="_blank" ><code>&lt;col&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_tbody.asp" class="tagObj" target="_blank" ><code>&lt;tbody&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_thead.asp" class="tagObj" target="_blank" ><code>&lt;thead&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_tfoot.asp" class="tagObj" target="_blank" ><code>&lt;tfoot&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_tr.asp" class="tagObj" target="_blank" ><code>&lt;tr&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_td.asp" class="tagObj" target="_blank" ><code>&lt;td&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_th.asp" class="tagObj" target="_blank" ><code>&lt;th&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Formulários" class="tagType" target="_blank">Formulários</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_form.asp" class="tagObj" target="_blank" ><code>&lt;form&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_fieldset.asp" class="tagObj" target="_blank" ><code>&lt;fieldset&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_legend.asp" class="tagObj" target="_blank" ><code>&lt;legend&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_label.asp" class="tagObj" target="_blank" ><code>&lt;label&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_input.asp" class="tagObj" target="_blank" ><code>&lt;input&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_button.asp" class="tagObj" target="_blank" ><code>&lt;button&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_select.asp" class="tagObj" target="_blank" ><code>&lt;select&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_datalist.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;datalist&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_optgroup.asp" class="tagObj" target="_blank" ><code>&lt;optgroup&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_option.asp" class="tagObj" target="_blank" ><code>&lt;option&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_textarea.asp" class="tagObj" target="_blank" ><code>&lt;textarea&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_keygen.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;keygen&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_output.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;output&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_progress.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;progress&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_meter.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;meter&gt;</code></a>
+            </div>
+          </div>
+
+          <div class="cube bg-radial-orange border_cube">
+            <div class="cube_title">
+              <b>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list#Elementos_interativos" class="tagType" target="_blank">Elementos interativos</a>
+              </b>
+            </div>
+            <div class="cube_body">
+              <a href="http://www.w3schools.com/tags/tag_details.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;details&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_summary.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;summary&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_command.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;command&gt;</code></a>
+              <a href="http://www.w3schools.com/tags/tag_menu.asp" class="tagObj isHtml5" target="_blank" ><code>&lt;menu&gt;</code></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ing step slide" data-x="24500" data-y="4600" data-scale="5">
+          <q class="tx-center margin-top-lg">
+      			<img src="images/attention.png" style="width: 50%!important; margin:0; padding:0;" />
+      			<br>
+            <script src="https://gist.github.com/marciosalinodias/57d4b6358be26cb60031c86a499b0468.js"></script>
+      		</q>
+        </div>
+
+        <div class="ing step" data-x="24500" data-y="1000" data-scale="4">
+          <div class="tx-center margin-top-lg">
+            <p class="try tx-left margin-right-lg">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank">
+                <b><em>&lt;Template&gt;</em></b>
+              </a>
+              <img src="images/memes/xray_dog.png" style="width: 20%!important; margin: 0; padding: 0; position: absolute; top: -35px; right: 30px;" />
+            </p>
+            <script src="https://gist.github.com/marciosalinodias/cf4dd6452b8a50c72f0cedfb9c94d1e5.js"></script>
+            <div class="border_cube margin-lg">
+              <img src="images/memes/ie_troll.png" style="width: 6%!important; background-color: #fff; border-radius: 50%; position: absolute; padding: 5px; right: 15px; bottom: 15px;" />
+              <div id="templateTeste" class="fnt-scale-down-40"></div>
+              <button class="button border_cube" onclick="usar()">Usar Template</button>
+              <script>
+                function usar() {
+                  var content = document.querySelector('template').content;
+                  // Update something in the template DOM.
+                  var span = content.querySelector('span');
+                  span.textContent = parseInt(span.textContent) + 1;
+                  document.querySelector('#templateTeste').appendChild(
+                      document.importNode(content, true));
+                }
+              </script>
+
+              <template>
+                <b>Usou: <span>0</span></b>
+              </template>
+            </div>
+      		</div>
+        </div>
+
+        <div class="ing step" data-x="24500" data-y="-2500" data-scale="5">
+          <p class="tx-left">
+            <a href="http://www.w3schools.com/html/html_attributes.asp" target="_blank">
+              <b><em>Html Attributes</em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-50 margin-top-lg margin-bottom-lg">Permite configurar informações adicionais para as tags:</p>
+          <img src="images/armor.png" style="margin:0;padding:0; width: 32%!important;" />
+          <ul class="tx-left fnt-scale-down-50 margin-left-lg pull-right" style="width:60%;">
+              <li>Todas as tags possuem atributos</li>
+              <li>Adicionam informações às tags</li>
+              <li>São declarados na tag de abertura</li>
+              <li>Podem vir em dois formatos: chave="valor" ou valor</li>
+              <li>O valor pode estar entre aspas simples, duplas ou diretamente no código</li>
+          </ul>
+          <br />
+          <script src="https://gist.github.com/marciosalinodias/f18fca455ceb4972bd93d16fe60e7043.js"></script>
+        </div>
+
+        <div class="ing step step1200" data-x="21500" data-y="-5500" data-rotate="45" data-scale="3">
+          <p  class="try tx-center margin-right-lg">
+            <a href="http://www.w3schools.com/tags/tag_head.asp" target="_blank">
+              <b><em>Attributes="Global" <span class="fnt-scale-down-40">(pt. 1)</span></em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-40 tx-right">
+            Existem diversos atributos que são específicos de algumas tags.
+            <br />
+            Porém há muitos <b>atributos globais</b>, cuja função é a mesma para todas as tags.
+          </p>
+          <table class="table_free table_api">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/att_global_accesskey.asp" target="_blank">
+                    <b class="rotating-">accesskey</b>
+                  </a>
+                </td>
+                <td>Define qual tecla será usada ara acesso rápido do elemento.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_class.asp" target="_blank">
+                    <b class="rotating-">class</b>
+                  </a>
+                </td>
+                <td>Define classes para o elemento (podendo relacionar com classes css). Classes podem se repetir.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_contenteditable.asp" target="_blank">
+                    <b class="rotating-">contenteditable</b>
+                  </a>
+                </td>
+                <td>Determina se o conteúdo é editavel.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_contextmenu.asp" target="_blank">
+                    <b class="rotating-">contextmenu</b>
+                  </a>
+                </td>
+                <td>Define um menu de contexto para o elemento (botão direito do mouse).</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_data.asp" target="_blank">
+                    <b class="rotating-">data-*</b>
+                  </a>
+                </td>
+                <td>Define valores privados para os elementos, não os afetando visualmente.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_dir.asp" target="_blank">
+                    <b class="rotating-">dir</b>
+                  </a>
+                </td>
+                <td>Determina a direção do texto.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_draggable.asp" target="_blank">
+                    <b class="rotating-">draggable</b>
+                  </a>
+                </td>
+                <td>Define se o elemento pode ser arrastado (draggable).</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_dropzone.asp" target="_blank">
+                    <b class="rotating-">dropzone</b>
+                  </a>
+                </td>
+                <td>Define a area de drop dos elementos draggable.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ing step step1200" data-x="24500" data-y="-6000" data-rotate="45" data-scale="3">
+          <p  class="try tx-center margin-right-lg">
+            <a href="http://www.w3schools.com/tags/tag_head.asp" target="_blank">
+              <b><em>Attributes="Global" <span class="fnt-scale-down-40">(pt. 2)</span></em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-40 tx-right">
+            Existem diversos atributos que são específicos de algumas tags.
+            <br />
+            Porém há muitos <b>atributos globais</b>, cuja função é a mesma para todas as tags.
+          </p>
+          <table class="table_free table_api">
+            <tbody>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_hidden.asp" target="_blank">
+                    <b class="rotating-">hidden</b>
+                  </a>
+                </td>
+                <td>Torna o elemento irrelevante, escondido.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_id.asp" target="_blank">
+                    <b class="rotating-">id</b>
+                  </a>
+                </td>
+                <td>Define um identificador para o elemento (único na página).</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_lang.asp" target="_blank">
+                    <b class="rotating-">lang</b>
+                  </a>
+                </td>
+                <td>Seta a linguagem do elemento. Usado por ferramentas de acessibilidade.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_spellcheck.asp" target="_blank">
+                    <b class="rotating-">spellcheck</b>
+                  </a>
+                </td>
+                <td>Ativa ou não a validação de gramática no elemento.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_style.asp" target="_blank">
+                    <b class="rotating-">style</b>
+                  </a>
+                </td>
+                <td>Define css inline.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_tabindex.asp" target="_blank">
+                    <b class="rotating-">tabindex</b>
+                  </a>
+                </td>
+                <td>Determina o estilo de tabulação do elemento.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/attr_global_title.asp" target="_blank">
+                    <b class="rotating-">title</b>
+                  </a>
+                </td>
+                <td>Pequeno texto exibido ao deixar o mouse sobre o elemento.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="isHtml5" href="http://www.w3schools.com/tags/attr_global_translate.asp" target="_blank">
+                    <b class="rotating-">translate</b>
+                  </a>
+                </td>
+                <td>Define se um elemento pode ou não ser traduzido.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ing step" data-x="30000" data-y="-4500" data-z="-100" data-rotate-x="-120" data-rotate-y="-230" data-scale="2">
+          <p class="tx-center">
+            <img src="images/html.png" style=" margin: 0; padding: 20px; width: 32%!important; background-color: #fff; border-radius: 30px;" />
+          </p>
+        </div>
+
+        <div class="ing step slide" data-x="30000" data-y="-1500" data-scale="3">
+          <q class="tx-center margin-top-lg">
+      			<h3>
+              <a href="http://www.w3schools.com/html/html5_intro.asp" target="_blank">
+                <b>HTML 5</b>
+              </a>
+            </h3>
+            <p class="fnt-scale-down-50">
+              &#9733; 2009 &#8226; &#10013; -
+            </p>
+            <div>
+              <ul class="tx-left fnt-scale-down-40 margin-left-lg pull-left" style="width: 50%;">
+                  <li><span class="fnt-scale-down-110">Novo</span> <a href="http://www.w3schools.com/tags/tag_doctype.asp" target="_blank">&lt;!DOCTYPE html&gt;</a></li>
+                  <li>
+                    <span class="fnt-scale-down-110">Novos elementos sem&acirc;nticos:</span>
+                    <a href="http://www.w3schools.com/tags/tag_header.asp" class="" target="_blank" ><code>&lt;header&gt;</code></a>,
+                    <a href="http://www.w3schools.com/tags/tag_nav.asp" class="" target="_blank" ><code>&lt;nav&gt;</code></a>,
+                    <a href="http://www.w3schools.com/tags/tag_section.asp" class="" target="_blank" ><code>&lt;section&gt;</code></a>,
+                    <a href="http://www.w3schools.com/tags/tag_article.asp" class="" target="_blank" ><code>&lt;article&gt;</code></a>,
+                    <a href="http://www.w3schools.com/tags/tag_footer.asp" class="" target="_blank" ><code>&lt;footer&gt;</code></a>
+                  </li>
+                  <li>
+                    <span class="fnt-scale-down-110">Novos elementos para formul&aacute;rios:</span>
+                    <a href="http://www.w3schools.com/tags/att_input_type.asp" target="_blank" ><code>number</code></a>,
+                    <a href="http://www.w3schools.com/tags/att_input_type.asp" target="_blank" ><code>date</code></a>,
+                    <a href="http://www.w3schools.com/tags/att_input_type.asp" target="_blank" ><code>time</code></a>,
+                    <a href="http://www.w3schools.com/tags/att_input_type.asp" target="_blank" ><code>calendar</code></a>,
+                    <a href="http://www.w3schools.com/tags/att_input_type.asp" target="_blank" ><code>range</code></a>
+                  </li>
+                  <li>
+                    <span class="fnt-scale-down-110">Novos elementos gr&aacute;ficos:</span>
+                    <a href="http://www.w3schools.com/tags/tag_svg.asp" class="" target="_blank" ><code>&lt;svg&gt;</code></a>,
+                    <a href="http://www.w3schools.com/tags/tag_canvas.asp" class="" target="_blank" ><code>&lt;canvas&gt;</code></a>,
+                  </li>
+                  <li>
+                    <span class="fnt-scale-down-110">Novos elementos multim&iacute;dia:</span>
+                    <a href="http://www.w3schools.com/tags/tag_audio.asp" class="" target="_blank" ><code>&lt;audio&gt;</code></a>,
+                    <a href="http://www.w3schools.com/tags/tag_video.asp" class="" target="_blank" ><code>&lt;video&gt;</code></a>
+                  </li>
+              </ul>
+              <img class="fadein" src="images/memes/deadpool.jpg" style="margin:0;padding:0; width: 40%!important; margin-top: 40px; margin-left: 30px;" />
+            </div>
+          </q>
+        </div>
+
+        <div class="ing step step1000" data-x="30000" data-y="2000" data-rotate="90" data-scale="3">
+          <h3 class="tx-center margin-bottom-lg">
+            <b>Layouts < 5</b>
+          </h3>
+          <div class="fnt-scale-down-50">
+            <p>
+              <b>Frame</b>
+              <span class="pull-right"><b>Tableless</b></span>
+            </p>
+            <img class="border_cube" src="images/frame_layout.png" style="margin:0; width: 250px; background-color:#f0f0f0;" />
+            <img class="pull-right border_cube" src="images/tableless_layout.png" style="margin:0; height: 250px; background-color:#f0f0f0;" />
+            <br>
+            <img src="images/up_right_arrow.png" style="margin:0 30px 0 120px;width: 100px; vertical-align: top; -webkit-filter: invert(100%); filter: invert(100%);" />
+            <img class="border_cube" src="images/table_layout.png" style="margin:0; height: 250px; background-color:#f0f0f0;" />
+            <img src="images/up_right_arrow.png" style="width: 100px; vertical-align: top; -webkit-filter: invert(100%); filter: invert(100%); -ms-transform: rotate(270deg); -webkit-transform: rotate(270deg); transform: rotate(270deg);" />
+            <p class="tx-center"><b>Table</b></p>
+          </div>
+        </div>
+
+        <div class="ing step step1000" data-x="34000" data-y="2000" data-rotate="180" data-scale="5">
+          <h3 class="tx-center margin-bottom-lg">
+            <b>HTML 5</b>
+          </h3>
+          <p class="fnt-scale-down-60 tx-center">
+            <a href="http://www.w3schools.com/tags/tag_header.asp" class="" target="_blank" ><code>&lt;header&gt;</code></a>&nbsp;
+            <a href="http://www.w3schools.com/tags/tag_nav.asp" class="" target="_blank" ><code>&lt;nav&gt;</code></a>&nbsp;
+            <a href="http://www.w3schools.com/tags/tag_section.asp" class="" target="_blank" ><code>&lt;section&gt;</code></a>&nbsp;
+            <a href="http://www.w3schools.com/tags/tag_article.asp" class="" target="_blank" ><code>&lt;article&gt;</code></a>&nbsp;
+            <a href="http://www.w3schools.com/tags/tag_footer.asp" class="" target="_blank" ><code>&lt;footer&gt;</code></a>
+          </p>
+          <img class="border_cube" src="images/html5Layout.png" style="padding: 10px; background-color:#f0f0f0;" />
+          <img class="border_cube pull-left" src="images/html5Layout2.png" style="padding: 10px; background-color:#f0f0f0;" />
+        </div>
+
+        <div class="ing step"  data-x="34000" data-y="-1000" data-rotate="180" data-scale="5">
+          <p class="tx-center">
+            <a href="http://www.linhadecodigo.com.br/artigo/3518/principais-mudancas-na-estruturacao-de-uma-pagina-com-html-5.aspx" target="_blank">
+              <b><em>&lt;!-- IE Hack --&gt;</em></b>
+            </a>
+          </p>
+          <img class="pull-left" src="images/memes/ie_troll.png" style="width: 32%!important; background-color: #fff; border-radius: 50%;" />
+          <div class="tx-left fnt-scale-down-50 margin-top-lg padding-top-lg">
+            <b>&lt;!--[if IE]&gt;</b>
+            <br>
+            <span>
+              &nbsp;&lt;script src=&quot;
+              <br>
+              &nbsp;<a href="http://html5shiv.googlecode.com/svn/trunk/html5.js"><span class="fnt-scale-down-80">http://html5shiv.googlecode.com/svn/trunk/html5.js</span></a>
+              <br>
+              &nbsp;&quot;&gt;&lt;/script&gt;
+            </span>
+            <br>
+            <b>&lt;![</b>endif<b>]--&gt;</b>
+            <br>
+            <br>
+            <a class="tx-overline fnt-scale-down-60" href="http://www.quirksmode.org/css/condcom.html" target="_blank">( Saiba mais )</a>
+          </div>
+        </div>
+
+        <div class="ing step step1200" data-x="34000" data-y="-4000" data-rotate="180" data-scale="5">
+          <p  class="try tx-right margin-right-lg" style="padding-right: 100px;">
+            <b><em>HTML5 API's</em></b>
+          </p>
+          <p class="fnt-scale-down-50 margin-bottom-lg">Existem diversas novas API's. Abaixo seguem as mais significativas segundo a W3C:</p>
+          <table class="table_free table_api">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank">
+                    <b class="">Geolocalização</b>
+                  </a>
+                </td>
+                <td>Utilizada para obter o posicionamento do usuário</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/html5_draganddrop.asp" target="_blank">
+                    <b class="">Drag &amp; Drop</b>
+                  </a>
+                </td>
+                <td>Permite arrastar e soltar, em tela, elementos programados para isso</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/html5_webstorage.asp" target="_blank">
+                    <b class="">Local Storage</b>
+                  </a>
+                </td>
+                <td>API que permite armazenamento de dados no cliente sem o uso de cookies</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/html5_app_cache.asp" target="_blank">
+                    <b class="">App Cache</b>
+                  </a>
+                </td>
+                <td>Permite a navegação offline de sua aplicação através de um arquivo de manifesto</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/html5_webworkers.asp" target="_blank">
+                    <b class="">Web Workers</b>
+                  </a>
+                </td>
+                <td>Execução de um javascript em background, que não afeta a performance da p&aacute;gina</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/html5_serversentevents.asp" target="_blank">
+                    <b class="">Server-Sent Events (SSE)</b>
+                  </a>
+                </td>
+                <td>Permite a uma pagina web atualizar dados com o servidor, automaticamente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ing step"  data-x="38000" data-y="-1000" data-rotate="90" data-scale="5">
+          <p class="tx-left">
+            <a href="http://www.w3schools.com/html/html5_webstorage.asp" target="_blank">
+              <b><em>Local Storage</em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-50 margin-top-lg margin-bottom-lg">Navegador... guarda meus dados?!</p>
+          <img src="images/memes/localstorage.png" style="margin:0;padding:0; width: 32%!important;" />
+          <ul class="tx-left fnt-scale-down-50 margin-left-lg pull-right" style="width:60%;">
+              <li>Armazena os dados no navegador</li>
+              <li>Criado para nao usar os Cookies para armazenamento de dados</li>
+              <li>Separado por origem (dominio e protocolo)</li>
+              <li>Permite iteração entre páginas</li>
+              <li>Tamanho muito maior que os cookies</li>
+          </ul>
+          <br />
+          <p class="fnt-scale-down-50 margin-top-lg" style="display: inline-block;">
+            Ah, então Local Storage é Cookie?!
+          </p>
+          <img src="images/memes/no.jpg" style="margin:0;padding:0; width: 10%!important; float: right; position: absolute; right: 15%; bottom: 5%;" />
+          <p class="tx-center fnt-scale-down-60"><b>NO!</b> Local Storage != Cookie</p>
+          </p>
+        </div>
+
+        <div class="ing step" data-x="40000" data-y="2000" data-scale="6">
+          <p  class="try tx-center margin-right-lg" style="padding-right: 100px;">
+            <a href="http://www.w3schools.com/html/html_form_elements.asp" target="_blank">
+              <b><em>Form Elements</em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-50 margin-bottom-lg">Existem novos elementos de formulários:</p>
+          <table class="table_free table_api">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_datalist.asp" target="_blank">
+                    <b class="rotating-">&lt;datalist&gt;</b>
+                  </a>
+                </td>
+                <td>Monta uma lista de valores pré-definidos para uma input</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_keygen.asp" target="_blank">
+                    <b class="rotating-">&lt;keygen&gt;</b>
+                  </a>
+                </td>
+                <td>Define um campo para geração de uma chave</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/tags/tag_output.asp" target="_blank">
+                    <b class="rotating-">&lt;output&gt;</b>
+                  </a>
+                </td>
+                <td>Exibe um campo com o resultado de um cálculo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ing step" data-x="39000" data-y="5500" data-rotate="45" data-scale="5">
+          <p  class="try tx-center margin-right-lg" style="padding-right: 100px;">
+            <a href="http://www.w3schools.com/html/html_form_elements.asp" target="_blank">
+              <b><em>Input Types</em></b>
+            </a>
+          </p>
+          <p class="fnt-scale-down-50 margin-bottom-lg">Existem novos input types:</p>
+          <table class="table_free table_api" style="margin: auto;">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number" target="_blank">
+                    <b class="rotating-">number</b>
+                  </a>
+                </td>
+                <td><input type="number" name="quantity" min="1" max="5" style="width: 120px;"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date" target="_blank">
+                    <b class="rotating-">date</b>
+                  </a>
+                </td>
+                <td><input type="date" name="bday" ></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color" target="_blank">
+                    <b class="rotating-">color</b>
+                  </a>
+                </td>
+                <td><input type="color" name="favcolor"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_range" target="_blank">
+                    <b class="rotating-">range</b>
+                  </a>
+                </td>
+                <td><input type="range" name="points" min="0" max="10"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_month" target="_blank">
+                    <b class="rotating-">month</b>
+                  </a>
+                </td>
+                <td><input type="month" name="bdaymonth"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_week" target="_blank">
+                    <b class="rotating-">week</b>
+                  </a>
+                </td>
+                <td><input type="week" name="week_year"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_time" target="_blank">
+                    <b class="rotating-">time</b>
+                  </a>
+                </td>
+                <td><input type="time" name="usrtime"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_datetime-local" target="_blank">
+                    <b class="rotating-">datetime-local</b>
+                  </a>
+                </td>
+                <td><input type="datetime-local" name="bdaytime"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_email" target="_blank">
+                    <b class="rotating-">email</b>
+                  </a>
+                </td>
+                <td>
+                  <a class="fnt-scale-down-120" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_search" target="_blank">
+                    <b class="rotating-">search</b>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_tel" target="_blank">
+                    <b class="rotating-">tel</b>
+                  </a>
+                </td>
+                <td>
+                  <a class="fnt-scale-down-120" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_url" target="_blank">
+                    <b class="rotating-">url</b>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ing step"  data-x="35000" data-y="6000" data-rotate="90" data-scale="5">
+          <p class="tx-left">
+            <a href="http://www.w3schools.com/tags/tag_form.asp" target="_blank">
+              <b><em>Form important</em></b>
+            </a>
+          </p>
+          <img src="images/remember.png" style="margin:0;padding:0; width: 32%!important;" />
+          <ul class="tx-left fnt-scale-down-50 margin-left-lg pull-right" style="width:40%;">
+              <li>Action</li>
+              <li>method</li>
+              <li>input submit</li>
+              <li>novalidate</li>
+          </ul>
+        </div>
+
+        <div class="ing step " data-x="20000" data-y="11000" data-rotate="180"  data-scale="15">
+          <div class="tx-center fadein tx-center border_cube" >
+            <p>
+              Sugestões?! Dúvidas?!
+            </p>
+            <img class="pull-left" src="https://s.gravatar.com/avatar/1a47308b1d909d7f9971cb6861363f09?s=200" style="background-color: #fff; border-radius: 50%;" />
+            <p class="tx-left fnt-scale-down-50 margin-top-lg padding-top-lg">
+              Marcio Dias
+              <br>
+              <img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/github_mark.png" />&nbsp;
+              <a href="https://github.com/marciosalinodias" target="_blank">github.com/marciosalinodias</a>
+              <br>
+              <img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/glyphicons-envelope.png" />&nbsp;
+              <a href="mailto:marciosalinodias@gmail.com?Subject=DojoHTML5" target="_top">marciosalinodias@gmail.com</a>
+              <br>
+              <img style="margin:0;padding:0;-webkit-filter: invert(100%);filter: invert(100%);vertical-align: middle;" width="24" src="images/glyphicons-envelope.png" />&nbsp;
+              <a href="mailto:marcio.dias@aplub.com.br?Subject=DojoHTML5" target="_top">marcio.dias@aplub.com.br</a>
+              <br>
+              <br>
+            </p>
+            <p class="margin-bottom-lg">
+              Muito obrigado!
+            </p>
+          </div>
+        </div>
+
+    </div>
+
+    <div id="info_github">
+      <p>
+        Powered by&nbsp;
+        <a class="button" href="https://github.com/impress/impress.js/" title="Impress.js" target="_blank">
+          <img src="images/github_mark.png" />&nbsp;Impress.js
+        </a>
+        &nbsp;
+      </p>
+    </div>
+    <!-- IMPRESS -->
+    <div class="hint">
+        <p>Use a barra de espaço ou as setas para navegar.</p>
+    </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Toque na tela para navegar</p>";
+        }
+    </script>
+    <script src="js/impress.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        impress().init();
+        $(document).ready(function(){
+          setTimeout(function(){
+            $(".hint").fadeOut( "slow" );
+          }, 2000)
+        });
+    </script>
+</body>
