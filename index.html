@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080a0b" />
+    <meta
+      name="description"
+      content="Marcio Salino Dias — Tech Lead, Arquiteto de Software e Especialista em IA & Full-Stack. Mais de 17 anos de experiência."
+    />
+    <title>Marcio Salino Dias — Tech Lead & Arquitetura de Software</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/jetbrains-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/three.min.js" defer></script>
+    <script src="visuals.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#1">Ir para o conteúdo</a>
+    <div class="boot-screen" aria-hidden="true">
+      <div class="boot-window">
+        <div class="boot-title">
+          <svg
+            class="code-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            aria-hidden="true"
+          >
+            <path d="m8 5-6 7 6 7m8-14 6 7-6 7M14 2l-4 20" />
+          </svg>
+          MSDias
+          <span class="accent">OS</span>
+        </div>
+        <p>MSDias OS v1.0.26</p>
+        <div class="boot-lines">
+          <p>Inicializando perfil...</p>
+          <p>Carregando experiências...</p>
+          <p>Sincronizando projetos...</p>
+          <p>Conectando trajetória profissional...</p>
+          <p class="accent">ACESSO LIBERADO<span class="cursor">_</span></p>
+        </div>
+        <div class="boot-progress"></div>
+      </div>
+    </div>
+    <header class="topbar">
+      <a class="brand" href="#1"
+        ><svg
+          class="code-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          aria-hidden="true"
+        >
+          <path d="m8 5-6 7 6 7m8-14 6 7-6 7M14 2l-4 20" /></svg
+        ><span>MSDias <span class="accent">OS</span></span></a
+      >
+      <nav id="section-navigation" aria-label="Seções do portfólio">
+        <a href="#1" data-title="PERFIL" aria-label="Perfil">Perfil</a>
+        <a href="#2" data-title="SOBRE" aria-label="Sobre">Sobre</a>
+        <a href="#3" data-title="PRINCÍPIOS" aria-label="Princípios"
+          >Princípios</a
+        >
+        <a href="#4" data-title="RESULTADOS" aria-label="Resultados"
+          >Resultados</a
+        >
+        <a href="#5" data-title="COMPETÊNCIAS" aria-label="Competências"
+          >Competências</a
+        >
+        <a href="#6" data-title="EXPERIÊNCIA" aria-label="Experiência"
+          >Experiência</a
+        >
+        <a href="#7" data-title="PROJETOS" aria-label="Projetos">Projetos</a>
+        <a href="#8" data-title="SERVIÇOS" aria-label="Serviços">Serviços</a>
+        <a href="#9" data-title="CONTATO" aria-label="Contato">Contato</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir navegação"
+        aria-controls="section-navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <div class="system-info">
+        <span>MSD-2026-001</span><span>ARARANGUÁ, SC</span
+        ><time id="clock" aria-label="Horário de Brasília">00:00:00:000</time>
+      </div>
+      <a
+        class="download button"
+        href="assets/cv-marcio-salino-dias.pdf"
+        download="Marcio-Salino-Dias-CV.pdf"
+        ><svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          aria-hidden="true"
+        >
+          <path d="M12 3v12m-4-4 4 4 4-4M4 15v5h16v-5" />
+        </svg>
+        BAIXAR CV</a
+      >
+    </header>
+    <main>
+      <div class="hero-grid">
+        <section id="1" class="panel profile reveal">
+          <h2 class="section-label">[ PERFIL / 001 ]</h2>
+          <div class="portrait">
+            <img
+              src="assets/profile-marcio.png"
+              alt="Foto colorida de Marcio Salino Dias"
+              width="1122"
+              height="1402"
+              fetchpriority="high"
+            />
+            <div class="scanlines" aria-hidden="true"></div>
+          </div>
+          <div class="identity">
+            <h1>MARCIO SALINO DIAS</h1>
+            <span class="barcode" aria-hidden="true"></span>
+          </div>
+          <p class="role">
+            TECH LEAD · ARQUITETO DE SOFTWARE · ESPECIALISTA EM IA &amp;
+            FULL-STACK
+          </p>
+          <dl class="profile-data">
+            <div>
+              <dt>EXPERIÊNCIA:</dt>
+              <dd>17+ anos</dd>
+            </div>
+            <div>
+              <dt>FOCO:</dt>
+              <dd>Arquitetura de Software &amp; IA</dd>
+            </div>
+            <div>
+              <dt>LOCALIZAÇÃO:</dt>
+              <dd>Araranguá, SC · Brasil</dd>
+            </div>
+            <div>
+              <dt>ATUAÇÃO:</dt>
+              <dd class="accent">Liderança técnica &amp; desenvolvimento</dd>
+            </div>
+          </dl>
+          <a
+            class="profile-cv button"
+            href="assets/cv-marcio-salino-dias.pdf"
+            download="Marcio-Salino-Dias-CV.pdf"
+            >BAIXAR CURRÍCULO <span aria-hidden="true">↓</span></a
+          >
+        </section>
+        <div class="hero-right">
+          <section id="2" class="panel biography reveal">
+            <h2 class="section-label">[ SOBRE / 002 ]</h2>
+            <h3>ARQUITETURA, INTELIGÊNCIA ARTIFICIAL E SOFTWARE QUE ESCALA.</h3>
+            <p>
+              Sou Marcio Salino Dias, especialista em tecnologia com mais de 17
+              anos de experiência no desenvolvimento de soluções de software
+              complexas e escaláveis. Meu foco atual está na intersecção entre
+              Arquitetura de Software e Inteligência Artificial, liderando a
+              modernização de ecossistemas digitais e a implementação de modelos
+              de desenvolvimento acelerados por IA.
+            </p>
+            <p>
+              Conduzo transições tecnológicas combinando Low-Code/No-Code e
+              Pro-Code, reduzo o time-to-market e faço a gestão de portfólios de
+              alta criticidade. Também atuo com mentoria técnica, decisões
+              arquiteturais e desenvolvimento full-stack para web e mobile.
+            </p>
+            <p class="highlight">
+              Criei o modelo Guardiões &amp; Copilotos para escalar a capacidade
+              produtiva sem comprometer a integridade das regras de negócio.
+            </p>
+          </section>
+          <section id="3" class="panel principles reveal">
+            <h2 class="section-label">[ PRINCÍPIOS / 003 ]</h2>
+            <ol>
+              <li>PROTEGER AS REGRAS DE NEGÓCIO <span>01</span></li>
+              <li>COMPARTILHAR CONHECIMENTO <span>02</span></li>
+              <li>PENSAR EM ARQUITETURA ESCALÁVEL <span>03</span></li>
+              <li>ACELERAR ENTREGAS COM IA <span>04</span></li>
+              <li>CONECTAR TECNOLOGIA E ESTRATÉGIA <span>05</span></li>
+              <li>DESENVOLVER PESSOAS E PRODUTOS <span>06</span></li>
+            </ol>
+          </section>
+          <section id="4" class="panel performance reveal">
+            <h2 class="section-label">[ RESULTADOS / 004 ]</h2>
+            <div class="performance-body">
+              <div class="metrics">
+                <div>
+                  <strong data-count="17" data-suffix="+">17+</strong
+                  ><span>ANOS DE EXPERIÊNCIA</span>
+                </div>
+                <div>
+                  <strong data-count="11">11</strong
+                  ><span>PRODUTOS ATIVOS NA IDEIA BUSINESS</span>
+                </div>
+                <div>
+                  <strong data-count="7">7</strong
+                  ><span>ORGANIZAÇÕES NA TRAJETÓRIA</span>
+                </div>
+                <div>
+                  <strong data-count="60" data-prefix="~" data-suffix="%"
+                    >~60%</strong
+                  ><span>REDUÇÃO NO CICLO DE ENTREGA COM IA</span>
+                </div>
+                <div>
+                  <strong>2–3×</strong
+                  ><span>CAPACIDADE DE ENTREGAS COM O MESMO TIME</span>
+                </div>
+                <div>
+                  <strong>2026</strong
+                  ><span>PÓS-GRADUAÇÃO EM ARQUITETURA E IA</span>
+                </div>
+              </div>
+              <div class="cloud-frame">
+                <canvas
+                  class="particle-orb"
+                  data-shape="cloud"
+                  aria-hidden="true"
+                ></canvas>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section id="5" class="panel tech-stack reveal">
+        <h2 class="section-label">[ COMPETÊNCIAS / 005 ]</h2>
+        <div class="stack-columns">
+          <div>
+            <div class="subheading">
+              <h3>WEB &amp; MOBILE</h3>
+              <span>8 TECNOLOGIAS</span>
+            </div>
+            <div class="skill-grid" id="frontend-skills"></div>
+          </div>
+          <div>
+            <div class="subheading">
+              <h3>BACKEND &amp; DADOS</h3>
+              <span>8 TECNOLOGIAS</span>
+            </div>
+            <div class="skill-grid" id="backend-skills"></div>
+          </div>
+        </div>
+        <div class="stack-tags">
+          <div class="tag-panel">
+            <h3>ARQUITETURA & IA</h3>
+            <div class="tags">
+              <span>MICROSSERVIÇOS</span><span>ARQUITETURA HÍBRIDA</span
+              ><span>DDD</span><span>GOF PATTERNS</span
+              ><span>ENG. DE PROMPT</span><span>LLMs: OPENAI / CLAUDE</span
+              ><span>AUTOMAÇÃO COM IA</span><span>APIs RESTful</span>
+            </div>
+          </div>
+          <div class="tag-panel">
+            <h3>LIDERANÇA & GESTÃO</h3>
+            <div class="tags">
+              <span>GESTÃO DE PORTFÓLIO</span><span>MENTORIA TÉCNICA</span
+              ><span>GUARDIÕES / COPILOTOS</span><span>ROADMAP ESTRATÉGICO</span
+              ><span>STAKEHOLDERS</span><span>SCRUM</span>
+            </div>
+          </div>
+          <div class="tag-panel">
+            <h3>DADOS & INFRAESTRUTURA</h3>
+            <div class="tags">
+              <span>DOCKER</span><span>CI/CD</span><span>GITHUB ACTIONS</span
+              ><span>AWS</span><span>VERCEL</span><span>VPS LINUX</span
+              ><span>LINUX / WINDOWS / macOS</span>
+            </div>
+          </div>
+          <div class="tag-panel">
+            <h3>FERRAMENTAS DE IA & DEV</h3>
+            <div class="tags">
+              <span>CURSOR IDE</span><span>LOVABLE</span
+              ><span>GITHUB COPILOT</span><span>ANTIGRAVITY</span
+              ><span>CLAUDE API</span><span>OPENAI API</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="6" class="panel experience reveal">
+        <div class="section-heading">
+          <h2 class="section-label">[ EXPERIÊNCIA / 006 ]</h2>
+          <span>LIDERANÇA, ARQUITETURA E DESENVOLVIMENTO.</span>
+        </div>
+        <div class="experience-list">
+          <details open>
+            <summary>
+              <span
+                ><small>OUT 2021 — ATUAL</small>
+                <h3>
+                  TECH LEAD & ARQUITETO DE SOFTWARE · IDEIA BUSINESS
+                </h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>
+                Liderança técnica e arquitetural de um ecossistema com 11
+                produtos ativos.
+              </li>
+              <li>
+                Criação e implementação do modelo Guardiões & Copilotos, com
+                redundância de conhecimento, escalabilidade produtiva e proteção
+                das regras de negócio.
+              </li>
+              <li>
+                Implantação de uma esteira acelerada por IA com Lovable, Cursor
+                IDE e Antigravity: redução de aproximadamente 60% no ciclo de
+                entrega e capacidade de 2–3× mais entregas com o mesmo time.
+              </li>
+              <li>
+                Orquestração do roadmap de migração para arquitetura híbrida,
+                combinando Low-Code/No-Code e Pro-Code.
+              </li>
+              <li>
+                Stack: Node.js, React/Next.js, C#, PHP, PostgreSQL, Docker, AWS
+                e Vercel.
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <span
+                ><small>OUT 2024 — ATUAL</small>
+                <h3>
+                  FULL-STACK SÊNIOR & CONSULTOR DE TECNOLOGIA · PANDORA
+                  TREINAMENTOS
+                </h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>
+                Desenvolvimento e manutenção de sistemas internos com foco em
+                escalabilidade e performance.
+              </li>
+              <li>
+                Consultoria estratégica para decisões de investimento
+                tecnológico e modernização de plataformas.
+              </li>
+              <li>Stack: Next.js, Node.js, C#, React, Dart, Docker e VPS.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <span
+                ><small>DEZ 2024 — ATUAL</small>
+                <h3>SÓCIO-FUNDADOR & LEAD DEVELOPER · TWIN GAMES</h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>
+                Fundação e desenvolvimento integral de uma plataforma de skill
+                gaming com partidas PvP de truco, xadrez, sinuca e batalha
+                naval, com premiação por habilidade.
+              </li>
+              <li>
+                Arquitetura full-stack com matchmaking em tempo real, carteira
+                digital com saque via Pix, autenticação, criptografia de
+                transações e lógica antifraude.
+              </li>
+              <li>
+                Interface mobile-first em Next.js e React; backend em Node.js
+                com APIs RESTful e integração com gateway de pagamento.
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <span
+                ><small>NOV 2018 — OUT 2021</small>
+                <h3>FULL-STACK SÊNIOR & SÓCIO · 3A CODE</h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>
+                Co-fundação e gestão de software house, com responsabilidade
+                pela arquitetura técnica e pelas entregas para múltiplos
+                clientes.
+              </li>
+              <li>
+                Desenvolvimento de sistemas distribuídos com integração de
+                assinatura e certificação digital.
+              </li>
+              <li>Stack: Next.js, Node.js, C#, React Native, Docker e AWS.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <span
+                ><small>NOV 2013 — NOV 2018</small>
+                <h3>FULL-STACK · APLUB</h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>
+                Evolução de desenvolvedor pleno a sênior e referência técnica.
+              </li>
+              <li>
+                Soluções para previdência privada nas áreas financeira, jurídica
+                e de entrega de documentação a órgãos governamentais.
+              </li>
+              <li>
+                Reformulação completa do sistema jurídico e criação de um novo
+                sistema com arquitetura DDD em AngularJS e C#.
+              </li>
+              <li>
+                Integração com sistemas TOTVS e participação como palestrante na
+                iniciativa interna Dojo.
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <span
+                ><small>MAI 2011 — NOV 2013</small>
+                <h3>DESENVOLVEDOR PLENO → SÊNIOR · CWI SOFTWARE</h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>
+                Projetos multi-cliente de grande escala em C#, Ruby on Rails,
+                PHP, Android, JavaScript, MySQL, PostgreSQL e SQL Server.
+              </li>
+              <li>Participação como palestrante na iniciativa Dojo interna.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <span
+                ><small>AGO 2010 — MAI 2011</small>
+                <h3>DESENVOLVEDOR JÚNIOR → PLENO · CESUCA</h3></span
+              ><span class="expand" aria-hidden="true"></span>
+            </summary>
+            <ul class="experience-points">
+              <li>Desenvolvimento de sistema de gestão acadêmica interna.</li>
+              <li>Stack: PHP, HTML, CSS, JavaScript e jQuery.</li>
+            </ul>
+          </details>
+        </div>
+        <div class="education-block">
+          <h3 class="section-label">[ FORMAÇÃO &amp; IDIOMAS ]</h3>
+          <div class="repo-grid" id="education-grid"></div>
+        </div>
+      </section>
+      <section id="7" class="panel projects reveal">
+        <div class="section-heading">
+          <h2 class="section-label">[ PROJETOS &amp; INICIATIVAS / 007 ]</h2>
+          <span>SOLUÇÕES E TRANSFORMAÇÕES DA MINHA TRAJETÓRIA.</span>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+      <section id="8" class="panel services reveal">
+        <div class="section-heading">
+          <h2 class="section-label">[ SERVIÇOS / 008 ]</h2>
+          <span>COMO POSSO AJUDAR SUA EMPRESA.</span>
+        </div>
+        <p class="services-intro">
+          Mais de 17 anos conectando estratégia, arquitetura e desenvolvimento.
+          Aplico minha experiência com portfólios de produtos, modernização de
+          sistemas e inteligência artificial para transformar desafios da sua
+          empresa em soluções práticas.
+        </p>
+        <div class="services-grid">
+          <article class="service-card" aria-labelledby="service-1">
+            <div class="service-topline">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 4h16v12H4zM8 20h8M12 16v4M8 12l3-3 3 2 3-4" /></svg
+              ><span>01 / 04</span>
+            </div>
+            <p class="service-kicker">ARQUITETURA / ESTRATÉGIA</p>
+            <h3 id="service-1">CONSULTORIA TECNOLÓGICA</h3>
+            <p class="service-description">
+              Transformo desafios de operação em decisões técnicas claras.
+              Avalio arquitetura, integrações e sistemas existentes para definir
+              prioridades de modernização e um roadmap alinhado ao negócio.
+            </p>
+            <h4 class="service-delivery-label">O QUE VOCÊ RECEBE</h4>
+            <ul class="service-deliverables">
+              <li>Diagnóstico técnico e arquitetural</li>
+              <li>Roadmap e priorização de investimentos</li>
+              <li>Mentoria e apoio à liderança técnica</li>
+            </ul>
+            <div class="service-experience">
+              <h4>EXPERIÊNCIA APLICADA</h4>
+              <p>
+                Mais de 17 anos em software, liderança de 11 produtos na Ideia
+                Business e consultoria de tecnologia na Pandora Treinamentos.
+              </p>
+            </div>
+            <a
+              class="service-cta"
+              href="#9"
+              data-service="CONSULTORIA TECNOLÓGICA"
+              >CONVERSAR SOBRE ESTE SERVIÇO
+              <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service-card" aria-labelledby="service-2">
+            <div class="service-topline">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="m12 2 2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5L12 2ZM20 16v6M17 19h6"
+                /></svg
+              ><span>02 / 04</span>
+            </div>
+            <p class="service-kicker">IA / AUTOMAÇÃO / PRODUTIVIDADE</p>
+            <h3 id="service-2">AI-DRIVEN CONSULT EMPRESARIAL</h3>
+            <p class="service-description">
+              Identifico onde a inteligência artificial pode gerar valor na
+              empresa. Conecto processos, dados e ferramentas para implantar
+              automações e fluxos assistidos por IA, com supervisão e atenção às
+              regras de negócio.
+            </p>
+            <h4 class="service-delivery-label">O QUE VOCÊ RECEBE</h4>
+            <ul class="service-deliverables">
+              <li>Mapeamento e priorização de casos de uso</li>
+              <li>Integração de LLMs e automações</li>
+              <li>Esteiras de desenvolvimento aceleradas por IA</li>
+            </ul>
+            <div class="service-experience">
+              <h4>EXPERIÊNCIA APLICADA</h4>
+              <p>
+                Na Ideia Business, a esteira com IA reduziu o ciclo de entrega
+                em aproximadamente 60% e elevou a capacidade para 2–3×, com o
+                mesmo time.
+              </p>
+            </div>
+            <a
+              class="service-cta"
+              href="#9"
+              data-service="AI-DRIVEN CONSULT EMPRESARIAL"
+              >CONVERSAR SOBRE ESTE SERVIÇO
+              <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service-card" aria-labelledby="service-3">
+            <div class="service-topline">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 4h18v16H3zM3 9h18M7 6.5h.01M10 6.5h.01M7 13h6M7 16h10"
+                /></svg
+              ><span>03 / 04</span>
+            </div>
+            <p class="service-kicker">PRESENÇA DIGITAL / WEB</p>
+            <h3 id="service-3">WEBSITE EMPRESARIAL</h3>
+            <p class="service-description">
+              Crio sites empresariais que apresentam seu negócio com clareza e
+              conectam a presença digital aos seus objetivos. Da estrutura de
+              conteúdo à implementação, construo interfaces responsivas para
+              desktop e celular.
+            </p>
+            <h4 class="service-delivery-label">O QUE VOCÊ RECEBE</h4>
+            <ul class="service-deliverables">
+              <li>Site institucional e páginas de apresentação</li>
+              <li>Interface responsiva e identidade visual</li>
+              <li>Integração com formulários e canais de contato</li>
+            </ul>
+            <div class="service-experience">
+              <h4>EXPERIÊNCIA APLICADA</h4>
+              <p>
+                Experiência em desenvolvimento web com React e Next.js. No
+                portfólio: Public-it e o site da ApexCode, conectando produto,
+                IA e presença digital.
+              </p>
+            </div>
+            <a class="service-cta" href="#9" data-service="WEBSITE EMPRESARIAL"
+              >CONVERSAR SOBRE ESTE SERVIÇO
+              <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service-card" aria-labelledby="service-4">
+            <div class="service-topline">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18" /></svg
+              ><span>04 / 04</span>
+            </div>
+            <p class="service-kicker">SISTEMAS / WEB / MOBILE</p>
+            <h3 id="service-4">SOFTWARE POR DEMANDA</h3>
+            <p class="service-description">
+              Desenvolvo software sob medida para a realidade da sua operação.
+              Estruturo sistemas web e mobile, APIs e integrações, com foco em
+              escalabilidade, evolução técnica e integridade das regras de
+              negócio.
+            </p>
+            <h4 class="service-delivery-label">O QUE VOCÊ RECEBE</h4>
+            <ul class="service-deliverables">
+              <li>Arquitetura e desenvolvimento full-stack</li>
+              <li>APIs, integrações e bancos de dados</li>
+              <li>Evolução e modernização de sistemas</li>
+            </ul>
+            <div class="service-experience">
+              <h4>EXPERIÊNCIA APLICADA</h4>
+              <p>
+                Co-fundação da 3A Code, desenvolvimento da Twin Games e
+                modernização de sistemas na APLUB. Atuação com Node.js,
+                React/Next.js, C#, PHP e React Native.
+              </p>
+            </div>
+            <a class="service-cta" href="#9" data-service="SOFTWARE POR DEMANDA"
+              >CONVERSAR SOBRE ESTE SERVIÇO
+              <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="panel terminal reveal" aria-label="Terminal do portfólio">
+        <div class="terminal-code">
+          <span class="line-number">1</span>
+          <pre><code id="terminal-code"></code><span class="cursor">▌</span></pre>
+        </div>
+      </section>
+      <section id="9" class="panel contact reveal">
+        <div class="section-heading">
+          <h2 class="section-label">[ CONTATO / 009 ]</h2>
+          <span>VAMOS CONVERSAR SOBRE TECNOLOGIA.</span>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>
+              Quer conversar sobre arquitetura de software, modernização de
+              plataformas ou desenvolvimento acelerado por IA? Compartilhe o
+              contexto do seu projeto.
+            </p>
+            <p>
+              Minha atuação conecta liderança técnica, consultoria de tecnologia
+              e desenvolvimento full-stack, com foco em soluções escaláveis e
+              nas regras de negócio.
+            </p>
+            <dl>
+              <div>
+                <dt>E-MAIL</dt>
+                <dd>
+                  <a href="mailto:marciosalinodias@gmail.com"
+                    >marciosalinodias@gmail.com</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>TELEFONE</dt>
+                <dd><a href="tel:+5551993116108">(51) 99311-6108</a></dd>
+              </div>
+              <div>
+                <dt>GITHUB</dt>
+                <dd>
+                  <a
+                    href="https://github.com/marciosalinodias"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >github.com/marciosalinodias</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>LINKEDIN</dt>
+                <dd>
+                  <a
+                    href="https://www.linkedin.com/in/marcio-salino-dias"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >linkedin.com/in/marcio-salino-dias</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>LOCALIZAÇÃO</dt>
+                <dd>
+                  <a
+                    href="https://maps.google.com/?q=Ararangu%C3%A1,SC,Brasil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Araranguá, SC · Brasil</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <form class="contact-form">
+            <h3>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 4h18v16H3zM9 8l-3 4 3 4m6-8 3 4-3 4M13 7l-2 10"
+                /></svg
+              >NOVA_MENSAGEM.SYS
+            </h3>
+            <div class="form-row">
+              <input
+                aria-label="Nome"
+                name="name"
+                placeholder="NOME"
+                required
+                autocomplete="name"
+              /><input
+                aria-label="E-mail"
+                name="email"
+                type="email"
+                placeholder="E-MAIL"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <input
+              aria-label="Empresa ou equipe"
+              name="company"
+              placeholder="EMPRESA/EQUIPE"
+              autocomplete="organization"
+            />
+            <div class="message-row">
+              <textarea
+                aria-label="Mensagem"
+                name="message"
+                placeholder="MENSAGEM"
+                required
+                rows="5"
+              ></textarea
+              ><canvas
+                class="particle-orb"
+                data-shape="globe"
+                aria-hidden="true"
+              ></canvas>
+            </div>
+            <button class="button" type="submit">ENVIAR MENSAGEM</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 MARCIO SALINO DIAS · MSDias OS</p>
+      <div>
+        <span><i></i> ARQUITETURA</span
+        ><span><i></i> INTELIGÊNCIA ARTIFICIAL</span
+        ><span><i></i> FULL-STACK</span><a href="#1">VOLTAR AO TOPO</a>
+      </div>
+    </footer>
+  </body>
+</html>
