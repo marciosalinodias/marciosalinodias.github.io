@@ -36,6 +36,17 @@ for (const [id, skills] of [
 }
 const projects = [
   {
+    name: "handoff-it",
+    image: "handoff-it",
+    imageAlt: "Página real do handoff-it, produto de memória de contexto para ferramentas de IA",
+    context: "PRODUTO PRÓPRIO",
+    description:
+      "Meu produto para preservar o contexto de projetos entre ferramentas de IA e máquinas. Sincroniza conversas do Claude Code e do Codex, organiza decisões e pendências e permite retomar o trabalho via MCP a partir de checkpoints e do histórico do projeto.",
+    tags: ["IA", "MCP", "MEMÓRIA DE CONTEXTO"],
+    url: "https://handoff-it.com/",
+    action: "CONHECER O PRODUTO",
+  },
+  {
     name: "PUBLIC-IT",
     image: "public-it",
     imageAlt: "Página do Public-it, produto para publicar sites criados por IA",
@@ -52,7 +63,7 @@ const projects = [
     imageAlt: "Site institucional da ApexCode, focada em IA e software",
     context: "SITE INSTITUCIONAL",
     description:
-      "Site da ApexCode, software house focada em inteligência artificial, software sob medida e transformação digital. Apresenta capacidades, método de trabalho e o Public-it, conectando estratégia, automação e integração de sistemas.",
+      "Site da ApexCode, software house focada em inteligência artificial, software sob medida e transformação digital. Apresenta capacidades, método de trabalho e o Public-it, conectando estratégia, transformação digital e integração de sistemas.",
     tags: ["WEB", "IA", "SOFTWARE"],
     url: "https://apexcode.digital/",
     action: "VISITAR SITE",

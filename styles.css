@@ -1906,3 +1906,8 @@ footer i {
   margin-top: auto;
   padding-top: 32px;
 }
+
+/* Destaque da trajetória sem limitar a experiência a uma contagem de produtos. */
+.metrics .metric-text{font-size:clamp(1.25rem,2.2vw,1.75rem);line-height:1.1;letter-spacing:-.03em}
+
+.metrics .metric-qualifier{font-size:11px;margin:0 0 4px;color:var(--text-muted,#aeb9ca)}
